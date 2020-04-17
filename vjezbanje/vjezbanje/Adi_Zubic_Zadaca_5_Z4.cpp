@@ -13,62 +13,6 @@
 //	Na kraju, program treba da ispise podatke o svim studentima u listi, da se uvjerimo da je lista
 //	zaista sortirana u skladu sa trazenim specifikacijama.
 
-class Lista {
-
-	struct Cvor
-	{
-		std::string ime_i_prezime;
-		double prosjek;
-		Cvor* veza;
-	};
-
-	Cvor* glava;
-	Cvor* trenutna;
-	Cvor* temp;
-
-public:
-	Lista()
-	{
-		glava = nullptr;
-		trenutna = nullptr;
-		temp = nullptr;
-	}
-
-	void noviCvor(std::string novo_ime_i_prezime, double novi_prosjek)
-	{
-		Cvor* n = new Cvor;
-		n->veza = nullptr;
-		n->ime_i_prezime = novo_ime_i_prezime;
-		n->prosjek = novi_prosjek;
-
-		if (glava != nullptr)
-		{
-			trenutna = glava;
-			while (trenutna->veza != nullptr)
-			{
-				trenutna = trenutna->veza;
-			}
-			trenutna->veza = n;
-		}
-		else
-		{
-			glava = n;
-		}
-	}
-
-	void PrintList()
-	{
-		trenutna = glava;
-		while (trenutna != nullptr)
-		{
-			std::cout << trenutna->veza << std::endl;
-			trenutna = trenutna->veza;
-		}
-	}
-
-};
-
-
 
 /*	*Pocnite citati odavdje*  *Ovaj veliki blok teksta ne morate procitat tu sam opisao kako rade linked liste i njihovo poredjenje sa vektorima*
 
@@ -96,38 +40,6 @@ public:
 
 void Adi_Zubic_Zadaca_5_Z4()
 {
-
-	Lista adi;
-
-	adi.noviCvor("jesam", 2.3);
-	adi.noviCvor("da", 2.5);
-	adi.noviCvor("daaaa", 3.3);
-	
-	
-	adi.PrintList();
-	
-	
-	
-	
-	//std::string ime_i_prezime;
-	//double prosjek;
-
-	//std::cout << "\n\n\tMolimo unesite ime i prezime studenta, ukoliko zelite prekinuti unos samo pritisnite ENTER:\n\t\t";
-	//getline(std::cin, ime_i_prezime);
-
-
-
-
-
-	//while (ime_i_prezime != "")
-	//{
-	//	std::cout << "\n\tMolimo unesite prosjecnu ocjenu: ";
-	//	std::cin >> prosjek;
-
-
-	//	std::cout << "\n\n\tMolimo unesite ime studenta, ukoliko zelite prekinuti unos samo pritisnite ENTER:\n\t\t";
-	//	getline(std::cin, ime_i_prezime);
-	//}
 
 
 }
