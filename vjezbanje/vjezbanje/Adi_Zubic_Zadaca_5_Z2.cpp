@@ -27,6 +27,12 @@ int Adi_Zubic_Zadaca_5_Z2(int* A_start, int* A_end, int* B_start, int* B_end)
 
 	// Nalazimo duzinu niza B koristeci istu metodu kao i za niz A.
 
+	// Naravno, mogli smo naci duzinu nizova preko for petlje, tj: napravimo kopiju pointera start, i iteriramo taj pointer
+	// dokle god on nije jednak end pointeru, i za kraj dodamo jedinicu, kao i kod vec koristenog metoda.
+	// Rezultat bi bio isti (dobili bi duzinu niza), ali ja sam koristio ovu metodu zato sto pretpostavljam da je optimizacijski
+	// bolje konvertovati hexadecimalnu vrijednost u decimalnu, oduzeti i podijeliti, nego iterirati kroz oba niza individualno 
+	// dok ne dodjemo do kraja.
+
 	if (duzinaB > duzinaA)
 		return -1;
 
@@ -118,7 +124,7 @@ void Adi_Zubic_Zadaca_5_Z2()
 		std::cout << i << " ";
 	}
 
-	// rezultat funkcije spasavamo u int rezultat (linija 148).
+	// rezultat funkcije spasavamo u int rezultat (linija 150).
 	// Mozemo primjetiti da u funkciju saljemo prvu memorijsku lokaciju niza A (i B), kao i 
 	// zadnju memorijsku lokaciju niza A (i B). Zadnju mem. lokaciju smo dobili tako sto smo od duzine
 	// oduzeli 1. Ukoliko je duzina 0, to znaci da ce rezultat (.size() - 1) biti -1, sto naravno nije
@@ -127,7 +133,7 @@ void Adi_Zubic_Zadaca_5_Z2()
 	// (niz duzine 0 je uvijek podniz drugog niza X duzine).
 	// Poslije toga cu ispisati da B nije podniz niza A ukoliko je niz A duzine 0.
 	// (Ako je duzina niza A == 0, onda B nije podniz niza A; osim ako je i duzina niza B == 0, a
-	// naravno ta situacija je rijesena u if-u linije 135)
+	// naravno ta situacija je rijesena u if-u linije 137)
 	if (nizB.size() == 0)
 	{	// prazan niz je uvijek podniz nekog drugog, ja sam stavio da ispise da taj podniz (B) pocinje
 		// od indeksa 0 (indeksa 0 niza A).
