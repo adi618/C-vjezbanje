@@ -84,8 +84,7 @@ Ideja algoritma:
 				programa koje su se igrom slucaja tu nasle)
 		-cak i kada ovo ne bi izazvalo bug, opet je bespotrebno traziti podniz pocevsi od npr. zadnjeg
 			elementa niza A, buduci da se niz B (npr. velicina 3) ne moze smjestiti u taj dio niza A.
-
-	-Ova implementacija bi bila ~O(n*m), gdje je n velicina niza A, a m velicina niza B
+	-Ova implementacija bi bila O(n*m) kompleksna.
 */
 void Adi_Zubic_Zadaca_5_Z2()
 {
@@ -95,21 +94,23 @@ void Adi_Zubic_Zadaca_5_Z2()
 
 	int temp;
 	std::cout << "\n\n\tMolimo unesite brojeve niza A (unesite '-1' da zaustavite unos):\n\t\t";
-	std::cin >> temp;				// U temp spasavamo uneseni broj
-	while (temp != -1)				// ako nije -1 / dok nije -1, ponavljamo petlju
+	while (true)				// while true petlja unutar koje imamo if koji sluzi da je prekine
 	{
+		std::cin >> temp;			// unosimo broj
 		nizA.push_back(temp);		// broj stavljamo u vektor/niz
 		std::cout << "\t\t";
-		std::cin >> temp;			// ponovo unosimo broj
+		if (temp == -1)				// izlazimo iz petlje kada korisnik unese -1
+			break;
 	}
 			// ispod radimo isto za niz B
 	std::cout << "\n\n\tMolimo unesite brojeve niza B (unesite '-1' da zaustavite unos):\n\t\t";
-	std::cin >> temp;
-	while (temp != -1)
+	while (true)
 	{
+		std::cin >> temp;
 		nizB.push_back(temp);
 		std::cout << "\t\t";
-		std::cin >> temp;
+		if (temp == -1)
+			break;
 	}
 
 	// Ispisujemo niz A, zatim B

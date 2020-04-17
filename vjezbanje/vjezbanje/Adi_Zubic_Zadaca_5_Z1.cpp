@@ -14,7 +14,7 @@
 //recenice(pozivom napisane funkcije).
 
 
-std::string IzdvojiRijec(std::string recenica, int brRijeci)
+std::string IzdvojiRijec(std::string recenica, const int& brRijeci)  // brRijeci ne planiram mijenjati pa sam ga poslao kao const reference
 {
     if (brRijeci < 1)   // Ukoliko je redni broj trazene rijeci manji od 1, vracamo prazan string. Prazan string oznacava da rijec rednog
         return "";      // broja nije nadjena buduci da se na tom rednom broju ne nalazi rijec unutar unesene recenice.
