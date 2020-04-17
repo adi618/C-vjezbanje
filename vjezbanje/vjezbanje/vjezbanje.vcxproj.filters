@@ -1,0 +1,361 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source Files\Random">
+      <UniqueIdentifier>{75c077bf-03a4-4fc7-a231-9c0ab361928a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Codewars">
+      <UniqueIdentifier>{ec3d3f1c-434a-42d7-ab3a-8b209a854ce4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Codesignal">
+      <UniqueIdentifier>{f79f52eb-74ca-471f-bfad-ec3217cf635a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Hackerrank">
+      <UniqueIdentifier>{8ff4b3d3-669e-441b-b514-765ee8516b22}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Hackerrank\THR Warm-up Challenges 4/4">
+      <UniqueIdentifier>{365c5fe8-35cb-4b5d-9ba4-8cf9cc0c28bc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Hackerrank\THR Strings: Manipulation 1/5">
+      <UniqueIdentifier>{81994087-bc78-4850-875d-bb77ac7bb453}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Hackerrank\THR Sorting 1/5">
+      <UniqueIdentifier>{611171f9-f2a3-495b-9059-61da37b69209}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Hackerrank\THR Dynamic Programming 1/4">
+      <UniqueIdentifier>{96f51f83-8b95-4402-b32d-d416dca20596}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Hackerrank\THR Arrays 3/5">
+      <UniqueIdentifier>{7e2e41f3-ce57-420d-99c3-22c155632b17}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Fax">
+      <UniqueIdentifier>{8f29aadf-9898-413d-980b-af47a22ab647}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Fax\Pokazivaci zadaci">
+      <UniqueIdentifier>{a1a01fd4-ef20-41d2-b6f0-bf4e16220fc8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Fax\Predavanja/vjezbe/whatever">
+      <UniqueIdentifier>{8ee9bc06-039b-44d1-8138-0df1de5ebb5a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Fax\Rekurzija zadaci">
+      <UniqueIdentifier>{67014f3f-1bdb-4239-b07c-154152838a98}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Fax\Zadace">
+      <UniqueIdentifier>{c08fbd6e-0319-4044-9dc4-7f6c0cfc48c2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Codesignal\Arcade">
+      <UniqueIdentifier>{8ce044d1-9d0b-4cc4-bc06-0be3ef89e733}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Codesignal\Arcade\5 - Island of Knowledge">
+      <UniqueIdentifier>{54543644-2c2b-4a38-b9dd-13f919e87a65}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Codesignal\Arcade\4 - Exploring the Waters">
+      <UniqueIdentifier>{1a498e2c-504d-45de-ab42-faabbca4ba1a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Codesignal\Arcade\3 - Smooth Sailing">
+      <UniqueIdentifier>{6d645aff-0da6-4a52-8f26-08f142ad331d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Codesignal\Arcade\2 - Edge of the Ocean">
+      <UniqueIdentifier>{024bde51-959b-4a1c-a93f-449d677aec18}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Codesignal\Practice">
+      <UniqueIdentifier>{3ad3a57e-c204-4aae-8b54-105657024cfd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\PCH">
+      <UniqueIdentifier>{30fadea7-bf70-40b4-b7cf-884710d6cb51}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Codesignal\Practice\Arrays">
+      <UniqueIdentifier>{0975a367-6bb3-4f5d-aa69-9951f261be35}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Codesignal\Practice\Strings">
+      <UniqueIdentifier>{29ae3024-252f-4d0b-b472-ab39d9dceeb0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Codesignal\Arcade\8 - Diving Deeper">
+      <UniqueIdentifier>{e9e5aa1e-02dc-43a7-ad54-d9dad6df0c29}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Codesignal\Challenges">
+      <UniqueIdentifier>{61a2c15e-cb46-4a57-bc33-3d8f6a8729b2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Codesignal\Arcade\12 - Land of Logic">
+      <UniqueIdentifier>{44291059-79f0-4fb8-8820-83d93bd88ead}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Source.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source1.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Vjezbanje_2_zadatak.cpp">
+      <Filter>Source Files\Fax\Rekurzija zadaci</Filter>
+    </ClCompile>
+    <ClCompile Include="Vjezbanje_3_zadatak.cpp">
+      <Filter>Source Files\Fax\Rekurzija zadaci</Filter>
+    </ClCompile>
+    <ClCompile Include="Vjezbanje_6_zadatak.cpp">
+      <Filter>Source Files\Fax\Rekurzija zadaci</Filter>
+    </ClCompile>
+    <ClCompile Include="Vjezbanje_5_zadatak.cpp">
+      <Filter>Source Files\Fax\Rekurzija zadaci</Filter>
+    </ClCompile>
+    <ClCompile Include="Vjezbanje_4_zadatak.cpp">
+      <Filter>Source Files\Fax\Rekurzija zadaci</Filter>
+    </ClCompile>
+    <ClCompile Include="Vjezbanje_7_zadatak.cpp">
+      <Filter>Source Files\Fax\Rekurzija zadaci</Filter>
+    </ClCompile>
+    <ClCompile Include="Vjezbanje_8_zadatak.cpp">
+      <Filter>Source Files\Fax\Rekurzija zadaci</Filter>
+    </ClCompile>
+    <ClCompile Include="Vjezbanje_10_zadatak.cpp">
+      <Filter>Source Files\Fax\Rekurzija zadaci</Filter>
+    </ClCompile>
+    <ClCompile Include="Vjezbanje_9_zadatak.cpp">
+      <Filter>Source Files\Fax\Rekurzija zadaci</Filter>
+    </ClCompile>
+    <ClCompile Include="Zadaca_1_zadatak.cpp">
+      <Filter>Source Files\Fax\Rekurzija zadaci</Filter>
+    </ClCompile>
+    <ClCompile Include="Zadaca_2_zadatak.cpp">
+      <Filter>Source Files\Fax\Rekurzija zadaci</Filter>
+    </ClCompile>
+    <ClCompile Include="Zadaca_3_zadatak.cpp">
+      <Filter>Source Files\Fax\Rekurzija zadaci</Filter>
+    </ClCompile>
+    <ClCompile Include="Zadaca_4_zadatak.cpp">
+      <Filter>Source Files\Fax\Rekurzija zadaci</Filter>
+    </ClCompile>
+    <ClCompile Include="Zadaca_5_zadatak.cpp">
+      <Filter>Source Files\Fax\Rekurzija zadaci</Filter>
+    </ClCompile>
+    <ClCompile Include="Zadaca_6_zadatak.cpp">
+      <Filter>Source Files\Fax\Rekurzija zadaci</Filter>
+    </ClCompile>
+    <ClCompile Include="sqrt without sqrt.cpp">
+      <Filter>Source Files\Random</Filter>
+    </ClCompile>
+    <ClCompile Include="Max suma susjednih elemenata.cpp">
+      <Filter>Source Files\Random</Filter>
+    </ClCompile>
+    <ClCompile Include="Adi_Zubic_Zadaca_1.cpp">
+      <Filter>Source Files\Fax\Zadace</Filter>
+    </ClCompile>
+    <ClCompile Include="MergeSort.cpp">
+      <Filter>Source Files\Fax\Predavanja/vjezbe/whatever</Filter>
+    </ClCompile>
+    <ClCompile Include="Bolnica.cpp">
+      <Filter>Source Files\Fax\Predavanja/vjezbe/whatever</Filter>
+    </ClCompile>
+    <ClCompile Include="BinarySearch.cpp">
+      <Filter>Source Files\Fax\Predavanja/vjezbe/whatever</Filter>
+    </ClCompile>
+    <ClCompile Include="Arrays Left Rotation.cpp">
+      <Filter>Source Files\Hackerrank\THR Arrays 3/5</Filter>
+    </ClCompile>
+    <ClCompile Include="Hourglass Problem.cpp">
+      <Filter>Source Files\Hackerrank\THR Arrays 3/5</Filter>
+    </ClCompile>
+    <ClCompile Include="Sock Merchant.cpp">
+      <Filter>Source Files\Hackerrank\THR Warm-up Challenges 4/4</Filter>
+    </ClCompile>
+    <ClCompile Include="Repeated String.cpp">
+      <Filter>Source Files\Hackerrank\THR Warm-up Challenges 4/4</Filter>
+    </ClCompile>
+    <ClCompile Include="Jumping on the Clouds.cpp">
+      <Filter>Source Files\Hackerrank\THR Warm-up Challenges 4/4</Filter>
+    </ClCompile>
+    <ClCompile Include="Counting Valleys.cpp">
+      <Filter>Source Files\Hackerrank\THR Warm-up Challenges 4/4</Filter>
+    </ClCompile>
+    <ClCompile Include="New Year Chaos.cpp">
+      <Filter>Source Files\Hackerrank\THR Arrays 3/5</Filter>
+    </ClCompile>
+    <ClCompile Include="Bubble Sort.cpp">
+      <Filter>Source Files\Hackerrank\THR Sorting 1/5</Filter>
+    </ClCompile>
+    <ClCompile Include="N rastaviti na sve moguce kombinacije X sabiraka.cpp">
+      <Filter>Source Files\Random</Filter>
+    </ClCompile>
+    <ClCompile Include="Fibonacci.cpp">
+      <Filter>Source Files\Random</Filter>
+    </ClCompile>
+    <ClCompile Include="Minimum Swaps 2.cpp">
+      <Filter>Source Files\Hackerrank\THR Arrays 3/5</Filter>
+    </ClCompile>
+    <ClCompile Include="Max Array Sum.cpp">
+      <Filter>Source Files\Hackerrank\THR Dynamic Programming 1/4</Filter>
+    </ClCompile>
+    <ClCompile Include="Making Anagrams.cpp">
+      <Filter>Source Files\Hackerrank\THR Strings: Manipulation 1/5</Filter>
+    </ClCompile>
+    <ClCompile Include="Duplicate Encoder.cpp">
+      <Filter>Source Files\Codewars</Filter>
+    </ClCompile>
+    <ClCompile Include="Unique in Order.cpp">
+      <Filter>Source Files\Codewars</Filter>
+    </ClCompile>
+    <ClCompile Include="Valid Braces.cpp">
+      <Filter>Source Files\Codewars</Filter>
+    </ClCompile>
+    <ClCompile Include="Find the Parity Outlier.cpp">
+      <Filter>Source Files\Codewars</Filter>
+    </ClCompile>
+    <ClCompile Include="Growth of a Population.cpp">
+      <Filter>Source Files\Codewars</Filter>
+    </ClCompile>
+    <ClCompile Include="Backwards Read Primes.cpp">
+      <Filter>Source Files\Codewars</Filter>
+    </ClCompile>
+    <ClCompile Include="Binary Multiple of 3.cpp">
+      <Filter>Source Files\Codewars</Filter>
+    </ClCompile>
+    <ClCompile Include="Adi_Zubic_Zadaca_2.cpp">
+      <Filter>Source Files\Fax\Zadace</Filter>
+    </ClCompile>
+    <ClCompile Include="2_zadatak.cpp">
+      <Filter>Source Files\Fax\Pokazivaci zadaci</Filter>
+    </ClCompile>
+    <ClCompile Include="4_zadatak.cpp">
+      <Filter>Source Files\Fax\Pokazivaci zadaci</Filter>
+    </ClCompile>
+    <ClCompile Include="Alternating Characters.cpp">
+      <Filter>Source Files\Hackerrank\THR Strings: Manipulation 1/5</Filter>
+    </ClCompile>
+    <ClCompile Include="Sherlock and the Valid String.cpp">
+      <Filter>Source Files\Hackerrank\THR Strings: Manipulation 1/5</Filter>
+    </ClCompile>
+    <ClCompile Include="Mark and Toys.cpp">
+      <Filter>Source Files\Hackerrank\THR Sorting 1/5</Filter>
+    </ClCompile>
+    <ClCompile Include="Almost Increasing Sequence.cpp">
+      <Filter>Source Files\Codesignal\Arcade\2 - Edge of the Ocean</Filter>
+    </ClCompile>
+    <ClCompile Include="Matrix Elements Sum (Ghost Building).cpp">
+      <Filter>Source Files\Codesignal\Arcade\2 - Edge of the Ocean</Filter>
+    </ClCompile>
+    <ClCompile Include="All Longest Strings.cpp">
+      <Filter>Source Files\Codesignal\Arcade\3 - Smooth Sailing</Filter>
+    </ClCompile>
+    <ClCompile Include="Common Character Count.cpp">
+      <Filter>Source Files\Codesignal\Arcade\3 - Smooth Sailing</Filter>
+    </ClCompile>
+    <ClCompile Include="6_zadatak.cpp">
+      <Filter>Source Files\Fax\Pokazivaci zadaci</Filter>
+    </ClCompile>
+    <ClCompile Include="Z2.cpp">
+      <Filter>Source Files\Fax\Pokazivaci zadaci</Filter>
+    </ClCompile>
+    <ClCompile Include="Adi_Zubic_Zadaca_3.cpp">
+      <Filter>Source Files\Fax\Zadace</Filter>
+    </ClCompile>
+    <ClCompile Include="Sort by Height.cpp">
+      <Filter>Source Files\Codesignal\Arcade\3 - Smooth Sailing</Filter>
+    </ClCompile>
+    <ClCompile Include="Reverse in Parentheses.cpp">
+      <Filter>Source Files\Codesignal\Arcade\3 - Smooth Sailing</Filter>
+    </ClCompile>
+    <ClCompile Include="Alternating Sums.cpp">
+      <Filter>Source Files\Codesignal\Arcade\4 - Exploring the Waters</Filter>
+    </ClCompile>
+    <ClCompile Include="Add Border.cpp">
+      <Filter>Source Files\Codesignal\Arcade\4 - Exploring the Waters</Filter>
+    </ClCompile>
+    <ClCompile Include="Are Similar.cpp">
+      <Filter>Source Files\Codesignal\Arcade\4 - Exploring the Waters</Filter>
+    </ClCompile>
+    <ClCompile Include="Array Change.cpp">
+      <Filter>Source Files\Codesignal\Arcade\4 - Exploring the Waters</Filter>
+    </ClCompile>
+    <ClCompile Include="Palindrome Rearranging.cpp">
+      <Filter>Source Files\Codesignal\Arcade\4 - Exploring the Waters</Filter>
+    </ClCompile>
+    <ClCompile Include="Array Maximal Adjacent Difference.cpp">
+      <Filter>Source Files\Codesignal\Arcade\5 - Island of Knowledge</Filter>
+    </ClCompile>
+    <ClCompile Include="pch.cpp">
+      <Filter>Source Files\PCH</Filter>
+    </ClCompile>
+    <ClCompile Include="Valid Sudoku.cpp">
+      <Filter>Source Files\Codesignal\Practice\Arrays</Filter>
+    </ClCompile>
+    <ClCompile Include="Rotate Image.cpp">
+      <Filter>Source Files\Codesignal\Practice\Arrays</Filter>
+    </ClCompile>
+    <ClCompile Include="Rotate Image - Optimized.cpp">
+      <Filter>Source Files\Codesignal\Practice\Arrays</Filter>
+    </ClCompile>
+    <ClCompile Include="First Not Repeating Character.cpp">
+      <Filter>Source Files\Codesignal\Practice\Arrays</Filter>
+    </ClCompile>
+    <ClCompile Include="First Duplicate.cpp">
+      <Filter>Source Files\Codesignal\Practice\Arrays</Filter>
+    </ClCompile>
+    <ClCompile Include="First Duplicate - Optimized.cpp">
+      <Filter>Source Files\Codesignal\Practice\Arrays</Filter>
+    </ClCompile>
+    <ClCompile Include="Amend the Sentence.cpp">
+      <Filter>Source Files\Codesignal\Practice\Strings</Filter>
+    </ClCompile>
+    <ClCompile Include="Adi_Zubic_Zadaca_3_Z1.cpp">
+      <Filter>Source Files\Fax\Zadace</Filter>
+    </ClCompile>
+    <ClCompile Include="Adi_Zubic_Zadaca_3_Z2.cpp">
+      <Filter>Source Files\Fax\Zadace</Filter>
+    </ClCompile>
+    <ClCompile Include="Adi_Zubic_Zadaca_3_Z3.cpp">
+      <Filter>Source Files\Fax\Zadace</Filter>
+    </ClCompile>
+    <ClCompile Include="Array Max N Consecutive Sum.cpp">
+      <Filter>Source Files\Codesignal\Arcade\8 - Diving Deeper</Filter>
+    </ClCompile>
+    <ClCompile Include="Adi_Zubic_Zadaca_4.cpp">
+      <Filter>Source Files\Fax\Zadace</Filter>
+    </ClCompile>
+    <ClCompile Include="OOP.cpp">
+      <Filter>Source Files\Random</Filter>
+    </ClCompile>
+    <ClCompile Include="Common Character Count 2.cpp">
+      <Filter>Source Files\Codesignal\Challenges</Filter>
+    </ClCompile>
+    <ClCompile Include="Reverse Vowels of String.cpp">
+      <Filter>Source Files\Codesignal\Challenges</Filter>
+    </ClCompile>
+    <ClCompile Include="Longest Word.cpp">
+      <Filter>Source Files\Codesignal\Arcade\12 - Land of Logic</Filter>
+    </ClCompile>
+    <ClCompile Include="Benchmark.cpp">
+      <Filter>Source Files\Random</Filter>
+    </ClCompile>
+    <ClCompile Include="Sum of Numbers.cpp">
+      <Filter>Source Files\Codesignal\Arcade\12 - Land of Logic</Filter>
+    </ClCompile>
+    <ClCompile Include="Stringovi.cpp">
+      <Filter>Source Files\Random</Filter>
+    </ClCompile>
+    <ClCompile Include="Adi_Zubic_Zadaca_5_Z1.cpp">
+      <Filter>Source Files\Fax\Zadace</Filter>
+    </ClCompile>
+    <ClCompile Include="Adi_Zubic_Zadaca_5_Z2.cpp">
+      <Filter>Source Files\Fax\Zadace</Filter>
+    </ClCompile>
+    <ClCompile Include="Adi_Zubic_Zadaca_5_Z3.cpp">
+      <Filter>Source Files\Fax\Zadace</Filter>
+    </ClCompile>
+    <ClCompile Include="Adi_Zubic_Zadaca_5_Z4.cpp">
+      <Filter>Source Files\Fax\Zadace</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="pch.h">
+      <Filter>Source Files\PCH</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

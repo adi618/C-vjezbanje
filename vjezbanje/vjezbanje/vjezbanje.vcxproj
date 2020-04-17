@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <ProjectGuid>{5D220B4A-5487-4862-BE89-BFE85D66770D}</ProjectGuid>
+    <RootNamespace>vjezbanje</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>C++</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="2_zadatak.cpp" />
+    <ClCompile Include="4_zadatak.cpp" />
+    <ClCompile Include="6_zadatak.cpp" />
+    <ClCompile Include="Add Border.cpp" />
+    <ClCompile Include="Adi_Zubic_Zadaca_1.cpp" />
+    <ClCompile Include="Adi_Zubic_Zadaca_2.cpp" />
+    <ClCompile Include="Adi_Zubic_Zadaca_3.cpp" />
+    <ClCompile Include="Adi_Zubic_Zadaca_3_Z1.cpp" />
+    <ClCompile Include="Adi_Zubic_Zadaca_3_Z2.cpp" />
+    <ClCompile Include="Adi_Zubic_Zadaca_3_Z3.cpp" />
+    <ClCompile Include="Adi_Zubic_Zadaca_4.cpp" />
+    <ClCompile Include="Adi_Zubic_Zadaca_5_Z1.cpp" />
+    <ClCompile Include="Adi_Zubic_Zadaca_5_Z2.cpp" />
+    <ClCompile Include="Adi_Zubic_Zadaca_5_Z3.cpp" />
+    <ClCompile Include="Adi_Zubic_Zadaca_5_Z4.cpp" />
+    <ClCompile Include="All Longest Strings.cpp" />
+    <ClCompile Include="Almost Increasing Sequence.cpp" />
+    <ClCompile Include="Alternating Characters.cpp" />
+    <ClCompile Include="Alternating Sums.cpp" />
+    <ClCompile Include="Amend the Sentence.cpp" />
+    <ClCompile Include="Are Similar.cpp" />
+    <ClCompile Include="Array Change.cpp" />
+    <ClCompile Include="Array Max N Consecutive Sum.cpp" />
+    <ClCompile Include="Array Maximal Adjacent Difference.cpp" />
+    <ClCompile Include="Arrays Left Rotation.cpp" />
+    <ClCompile Include="Backwards Read Primes.cpp" />
+    <ClCompile Include="Benchmark.cpp" />
+    <ClCompile Include="Binary Multiple of 3.cpp" />
+    <ClCompile Include="BinarySearch.cpp" />
+    <ClCompile Include="Bolnica.cpp" />
+    <ClCompile Include="Bubble Sort.cpp" />
+    <ClCompile Include="Common Character Count 2.cpp" />
+    <ClCompile Include="Common Character Count.cpp" />
+    <ClCompile Include="Counting Valleys.cpp" />
+    <ClCompile Include="Duplicate Encoder.cpp" />
+    <ClCompile Include="Fibonacci.cpp" />
+    <ClCompile Include="Find the Parity Outlier.cpp" />
+    <ClCompile Include="First Duplicate - Optimized.cpp" />
+    <ClCompile Include="First Duplicate.cpp" />
+    <ClCompile Include="First Not Repeating Character.cpp" />
+    <ClCompile Include="Growth of a Population.cpp" />
+    <ClCompile Include="Hourglass Problem.cpp" />
+    <ClCompile Include="Jumping on the Clouds.cpp" />
+    <ClCompile Include="Longest Word.cpp" />
+    <ClCompile Include="Making Anagrams.cpp" />
+    <ClCompile Include="Mark and Toys.cpp" />
+    <ClCompile Include="Matrix Elements Sum (Ghost Building).cpp" />
+    <ClCompile Include="Max Array Sum.cpp" />
+    <ClCompile Include="Max suma susjednih elemenata.cpp" />
+    <ClCompile Include="MergeSort.cpp" />
+    <ClCompile Include="Minimum Swaps 2.cpp" />
+    <ClCompile Include="N rastaviti na sve moguce kombinacije X sabiraka.cpp" />
+    <ClCompile Include="New Year Chaos.cpp" />
+    <ClCompile Include="OOP.cpp" />
+    <ClCompile Include="Palindrome Rearranging.cpp" />
+    <ClCompile Include="pch.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">pch.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">pch.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">pch.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="Repeated String.cpp" />
+    <ClCompile Include="Reverse in Parentheses.cpp" />
+    <ClCompile Include="Reverse Vowels of String.cpp" />
+    <ClCompile Include="Rotate Image - Optimized.cpp" />
+    <ClCompile Include="Rotate Image.cpp" />
+    <ClCompile Include="Sherlock and the Valid String.cpp" />
+    <ClCompile Include="Sock Merchant.cpp" />
+    <ClCompile Include="Sort by Height.cpp" />
+    <ClCompile Include="Source.cpp" />
+    <ClCompile Include="Source1.cpp" />
+    <ClCompile Include="Source2.cpp" />
+    <ClCompile Include="sqrt without sqrt.cpp" />
+    <ClCompile Include="Stringovi.cpp" />
+    <ClCompile Include="Sum of Numbers.cpp" />
+    <ClCompile Include="Unique in Order.cpp" />
+    <ClCompile Include="Valid Braces.cpp" />
+    <ClCompile Include="Valid Sudoku.cpp" />
+    <ClCompile Include="Vjezbanje_10_zadatak.cpp" />
+    <ClCompile Include="Vjezbanje_2_zadatak.cpp" />
+    <ClCompile Include="Vjezbanje_3_zadatak.cpp" />
+    <ClCompile Include="Vjezbanje_4_zadatak.cpp" />
+    <ClCompile Include="Vjezbanje_5_zadatak.cpp" />
+    <ClCompile Include="Vjezbanje_6_zadatak.cpp" />
+    <ClCompile Include="Vjezbanje_7_zadatak.cpp" />
+    <ClCompile Include="Vjezbanje_8_zadatak.cpp" />
+    <ClCompile Include="Vjezbanje_9_zadatak.cpp" />
+    <ClCompile Include="Z2.cpp" />
+    <ClCompile Include="Zadaca_1_zadatak.cpp" />
+    <ClCompile Include="Zadaca_2_zadatak.cpp" />
+    <ClCompile Include="Zadaca_3_zadatak.cpp" />
+    <ClCompile Include="Zadaca_4_zadatak.cpp" />
+    <ClCompile Include="Zadaca_5_zadatak.cpp" />
+    <ClCompile Include="Zadaca_6_zadatak.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="pch.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
