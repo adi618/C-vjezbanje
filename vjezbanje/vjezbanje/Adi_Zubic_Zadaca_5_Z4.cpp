@@ -18,30 +18,30 @@
 
 /*															O linked listama:
 	- Eng. termin za trazeno: linked list
-	- Svaki element linked liste je ili struktura ili klasa.
-	- Svi elementi sadrze neku informaciju (u nasem slucaju: ime, prezime i prosjek) i vezu sa sljedecim elementom. Ta veza se uspostavlja
+	- Svaki objekt linked liste je ili struktura ili klasa.
+	- Svi objekti sadrze neku informaciju (u nasem slucaju: ime, prezime i prosjek) i vezu sa sljedecim objektom. Ta veza se uspostavlja
 		pomocu pokazivaca.
-	- Prvi element se zove glava (end. head), on pokazuje na drugi element. Drugi element pokazuje na treci element,
-		i tako sve do zadnjeg elementa, koji pokazuje na null vrijednost. Null vrijednost se pise razlicito u razlicitim jezicima,
+	- Prvi objekt se zove glava (end. head), on pokazuje na drugi objekt. Drugi objekt pokazuje na treci objekt,
+		i tako sve do zadnjeg objekta, koji pokazuje na null vrijednost. Null vrijednost se pise razlicito u razlicitim jezicima,
 		u C++u je to nullptr (pokazivac koji je samo deklarisan, on ustvari ne pokazuje ni na sta).
 
 	- Linked liste, u poredjenju sa vektorima, imaju veliku prednost kada je u pitanju pisanje i brisanje elemenata:
-		- Linked liste: Da bi ubalici element na trecu poziciju, potrebno je samo promjeniti pokazivac druge pozicije da pokazuje na novi
-			element, i pokazivac novog elementa setati da pokazuje na, prijethodno trecu, sada cetvrtu poziciju.
-		- Vektori: Medjutim, da ubacimo element na trecu poziciju vektora, potrebno je napraviti novi vektor koji je za 1 veci od trenutnog,
-			kopirati prvu, drugu poziciju, ubaciti zeljeni element, i onda ubaciti sve ostale elemente koji bi naravno bili na indeksu koji
-			je za 1 veci od prijethodnog elementa.
+		- Linked liste: Da bi ubalici objekt na trecu poziciju, potrebno je samo promjeniti pokazivac druge pozicije da pokazuje na novi
+			objekt, i pokazivac novog objekta setati da pokazuje na, prijethodno trecu, sada cetvrtu poziciju.
+		- Vektori: Medjutim, da ubacimo objekt na trecu poziciju vektora, potrebno je napraviti novi vektor koji je za 1 veci od trenutnog,
+			kopirati prvu, drugu poziciju, ubaciti zeljeni objekt, i onda ubaciti sve ostale objekte koji bi naravno bili na indeksu koji
+			je za 1 veci od prijethodnog objekta.
 		- Linked liste konkretno operaciju brisanja i pisanja rade u konstantnom vremenu (O(1)), tj. nezavisno o broju elemenata uvijek je potrebna
-			ista kolicina vremena da se ubaci element na neku poziciju, dok vektori ovu operaciju rade u linearnom vremenu, tj. vise
+			ista kolicina vremena da se ubaci objekt na neku poziciju, dok vektori ovu operaciju rade u linearnom vremenu, tj. vise
 			elemenata = duze se radi operacija (O(n) kompleksnost).
-		- S druge strane, za pronalazenje X elementa, kod vektora mozemo koristiti algoritme kao sto su binary search (O(log n) kompleksnost),
+		- S druge strane, za pronalazenje X objekta, kod vektora mozemo koristiti algoritme kao sto su binary search (O(log n) kompleksnost),
 			dok za linked liste ne mozemo koristiti te algoritme, vec moramo krenuti od pocetka liste i ici dok ne dodjemo do zeljenog
-			elementa.
+			objekta.
 */
 
 struct Cvor
 {
-	friend class Mreza;		// Ova linija sluzi da dozvoli strukturi Mreza da pristupi privatnim varijablama strukture Cvor
+	friend class Mreza;		// Ova linija sluzi da dozvoli klasi Mreza da pristupi privatnim varijablama strukture Cvor
 
 private:
 	std::string ime_i_prezime;
@@ -55,9 +55,9 @@ public:
 };			// imena, prezimena i prosjeka koji smo proslijedili u konstruktor. (std::string ime_i_prezime_P, double prosjek_P) su varijable
 			// koje je konstruktor dobio kao rezultat linije 70, a ime_i_prezime i prosjek su varijable objekta strukture Cvor cije se
 			// valute setaju na proslijedjene. Takodjer pokazivac na sljedecu vezu setamo na nullptr.
-struct Mreza			// Nullptr cemo koristiti da znamo kada smo dosli do kraja linked liste, detaljnije na liniji 86
-{
-private:
+class Mreza			// Nullptr cemo koristiti da znamo kada smo dosli do kraja linked liste, detaljnije na liniji 86
+{					// Ovaj nacin setanja, tj. ime_funkcije(parametar) :varijabla_strukture(varijabla dobijena od parametara) se naziva
+private:			// initialization list
 	Cvor* glava;
 
 public:
@@ -73,58 +73,57 @@ public:
 		
 		if (glava == nullptr)	// Ukoliko je glava nullptr, to znaci da je lista prazna, te glavu pretvaramo u novi objekat, tj. objekat
 		{						// koji je korisnik upravo unio. Ovaj if ce se izvrsiti samo jednom, buduci da glava nece biti jednaka
-			glava = noviCvor;	// nullptr za svaki sljedeci element.
+			glava = noviCvor;	// nullptr za svaki sljedeci objekt.
 		}
 		else
 		{
 			Cvor* trenutna = glava;			// Ako smo dosli do ovog koda, to znaci da imamo bar jedan objekat unutar nase liste,
 			Cvor* prijethodna = nullptr;	// tako da prijethodnu setamo na nullptr, dok trenutnu setamo na glavu. Drugim rijecima:
-					// glava je prvi element, a prijethodna je nullptr buduci da nemamo prijethodne jer je trenutna ustvari prva.
+					// glava je prvi objekt, a prijethodna je nullptr buduci da nemamo prijethodne jer je trenutna ustvari prva.
 					// Kasnije u kodu cemo iterirati i jednu i drugu, efekat koji cemo dobiti jeste da ce trenutna uvijek biti objekt koji
 					// trenutno analiziramo, a prijethodna onaj prije njega.
 
-			while (trenutna != nullptr)		// Ukoliko je trenutna nullptr, to znaci da smo dosli do kraja liste tako da stopamo iteraciju.
-			{
-				if (trenutna->prosjek < noviCvor->prosjek)	// Ukoliko je prosjek trenutnog objekta manji od prosjeka sljedeceg, znaci da
-				{											// smo dosli do dijela liste u koji zelimo ubaciti nas novo objekat, tako da 
-					break;									// prekidamo petlju (petlju koristimo samo da dodjemo do lokacije za stavljanje
-				}											// elementa, ispod petlje ga ustvari stavljamo u listu)
-				prijethodna = trenutna;		// ukoliko nismo jos dosli do dijela gdje ubacijemo objekt, prijethodnu pretvaramo u trenutnu,
-				trenutna = trenutna->veza;	// a trenutnu u sljedecu vezu. Ovo je ustvari nacin iteracije kroz listu
-			}
-			if ()
-			{
+			while (trenutna != nullptr)						// Uloga ove petlje je da zaustavi kod na dijelu gdje trebamo ubaciti uneseni
+			{												// objekt. Provjera unutar while petlje sluzi da zaustavi kod kada dodjemo do
+				if (trenutna->prosjek < noviCvor->prosjek)	// kraja petlje, jer ako dodjemo do tog dijela, tu trebamo ubaciti objekt.
+					break;	// Ovaj if sluzi da zaustavi petlju prije nego sto je kraj liste, vec kada dodjemo na dio gdje zelimo
+							// ubaciti objekt da odrzimo sortiranje veceg prosjeka ka manjem.
+				else if (trenutna->prosjek == noviCvor->prosjek && trenutna->ime_i_prezime > noviCvor->ime_i_prezime)	// Ovaj ovdje if
+					break;	// koristim da zaustavim petlju kada su prosjeci jednaki i kada je ime_i_prezime trenutnog cvora alfabetski
+							// vece od novog cvora. Naravno, mogli smo smjestiti sve ove uslove u uslov unutar while-a
+				// ali sam ja rad lakseg razumijevanja ovako to uradio.
 
-			}
-			else
-			{
-				if (trenutna == glava)
-				{
-					noviCvor->veza = glava;
-					glava = noviCvor;
-				}
-				else
-				{
-					noviCvor->veza = trenutna;
-					prijethodna->veza = noviCvor;
-				}
-			}
+				prijethodna = trenutna;		// Ove dvije linije nam sluze da iteriramo kroz listu, tj. ako nismo dosli do dijela gdje
+				trenutna = trenutna->veza;	// zelimo ubaciti nas objekat onda nastavljamo dalje kroz listu, tako sto pomjeramo
+			}								// prijethodnu na trenutnu, trenutnu na sljedecu.
+
+			if (trenutna == glava)			// Ovaj if (i else ispod njeg) nam sluze da ubacimo objekt na lokaciju koju je while petlja
+			{								// iznad odlucila. Konkretno, ako se taj objekat treba ubaciti na pocetak, to znaci da trebamo
+				noviCvor->veza = glava;		// updateovat glavu. noviCvor pokazujemo na glavu, a glava postaje noviCvor. Dakle upravo smo
+				glava = noviCvor;			// glavu promjenili na noviCvor, a glava je onda postala drugi objekt linked liste.
+			}									
+												// Dio ispod je objasnjenje za zamjenu unutar else-a
+			else								// Konkretno kako zamjena radi: imamo listu npr: 22, 18, 15; zelimo ubaciti broj 17 u listu,
+			{									// preko iznad while petlje smo prosli preko brojeva 22 i 18, i dosli smo do broja koji je
+				noviCvor->veza = trenutna;		// manji od zadnje unesenog broja. Zadnje uneseni broj je spasen u noviCvor. Ono sto je 
+				prijethodna->veza = noviCvor;	// potrebno uraditi jeste uzeti vezu objekta noviCvor, postaviti je na trenutni element (15)
+			}									// i onda vezu prijethodne postaviti na taj noviCvor. Rezultat 22 -> 18 -> 17 -> 15.
 		}
 	}
 
 	void ispisiMrezu()
 	{
-		Cvor* iteracijskiPtr = glava;
+		Cvor* iteracijskiPtr = glava;		// Pravimo novi Cvor i postavljamo ga na glavu, tj. na pocetak liste.
 
-		while (iteracijskiPtr != nullptr)
+		while (iteracijskiPtr != nullptr)	// nullptr oznacava kraj liste, tako da ova petlja se nastavlja dok ne dodjemo do kraja
 		{
-			std::cout << "\n\tIme i prezime studenta: " << iteracijskiPtr->ime_i_prezime;
-			std::cout << "\n\tProsjek studenta: " << iteracijskiPtr->prosjek;
+			std::cout << "\n\tIme i prezime studenta: " << iteracijskiPtr->ime_i_prezime;	// ispisujemo ime i prezime
+			std::cout << "\n\tProsjek studenta: " << iteracijskiPtr->prosjek;				// ispisujemo prosjek
 
-			iteracijskiPtr = iteracijskiPtr->veza;
-		}
-	}
-};
+			iteracijskiPtr = iteracijskiPtr->veza;		// objekt koji posmatramo pretvaramo u objekt na koji on pokazuje. Taj objekt
+		}												// je sljedeci objekt liste osim ako nema vise objekata, u kojem slucaju
+	}													// onda pokazuje na nullptr. (nullptr kao posljedica 54. linije gdje je
+};														// veza po setana na nullptr cim se napravi)
 
 
 void Adi_Zubic_Zadaca_5_Z4()
@@ -147,10 +146,10 @@ void Adi_Zubic_Zadaca_5_Z4()
 		std::cin >> prosjek;
 		std::cin.ignore();
 
-		mreza->dodajNoviCvor(ime_i_prezime, prosjek);		// dodajNoviCvor je funkcija unutar strukture mreza,
+		mreza->dodajNoviCvor(ime_i_prezime, prosjek);		// dodajNoviCvor je funkcija unutar klase mreza,
 	}														// u nju saljemo ime i prezime i prosjek.
 	
 
-	mreza->ispisiMrezu();
+	mreza->ispisiMrezu();	// i na kraju pozivamo funkciju ispisiMrezu koja je dio klase mreza, detaljnije objasnjenje pored same funkcije
 }
 

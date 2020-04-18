@@ -34,9 +34,9 @@ int* Adi_Zubic_Zadaca_5_Z2(int* A_start, int* A_end, int* B_start, int* B_end)
 	// dok ne dodjemo do kraja.
 
 	if (duzinaB > duzinaA)
-		return A_end;
+		return A_end + 1;
 
-	// Ukoliko je niz B veci od niza A onda niz B sigurno nije podniz A, vracamo -1
+	// Ukoliko je niz B veci od niza A onda niz B sigurno nije podniz A, vracamo memorijsku lokaciju tacno iza niza A
 
 	for (int i = 0; i < duzinaA - duzinaB + 1; i++)
 	{
@@ -48,20 +48,20 @@ int* Adi_Zubic_Zadaca_5_Z2(int* A_start, int* A_end, int* B_start, int* B_end)
 		{
 			if (*(A_start + i + j) != *(B_start + j))	// Prva iteracija ove petlje ce biti
 			{											// niz A indeksa [i] != prvi broj niza B.
-				break;									// Svaki sljedeci se povecati ova dva za 1
+				break;									// Svaki sljedeci ce povecati ova dva za 1
 			}											// i ukoliko se petlja zavrsi bez breakanja
 		}												// to znaci da je j onoliko veliko koliko i 
 		if (j == duzinaB)								// duzina niza B, tako da u ovoj liniji
-			return &i;									// vracamo indeks.
+			return A_start + i;							// vracamo mem. lokaciju niza A na kojoj niz B pocinje.
 	}
 
 
-	return A_end;		// vracamo -1 za situacije gdje niz B nije unutar niza A
+	return A_end + 1;		// vracamo memorijsku lokaciju tacno iza niza A za situacije gdje niz B nije unutar niza A
 }/*
 	Ovu istu metodu mozemo koristiti i za pretrazivanje stringova.
 	Niz cuva elemente tipa integer, a string bi cuvao elementer tipa char, tako da jedino sto bi trebali
-	promjeniti unutar funkcije jeste parametre (promjeniti int* u char*), i sizeof(int) za mjerenje
-	duzine zamijeniti sa sizeof(char).
+	promjeniti unutar funkcije jeste parametre (promjeniti int* u char*), sizeof(int) za mjerenje
+	duzine zamijeniti sa sizeof(char) i return tip, int* u char*.
 
 	strstr() je funkcija koja daje isti rezultat kao ovdje opisani algoritam.
 	To je built in funkcija C++a.
@@ -97,20 +97,20 @@ void Adi_Zubic_Zadaca_5_Z2()
 	while (true)				// while true petlja unutar koje imamo if koji sluzi da je prekine
 	{
 		std::cin >> temp;			// unosimo broj
-		nizA.push_back(temp);		// broj stavljamo u vektor/niz
-		std::cout << "\t\t";
 		if (temp == -1)				// izlazimo iz petlje kada korisnik unese -1
 			break;
+		nizA.push_back(temp);		// broj stavljamo u vektor/niz
+		std::cout << "\t\t";
 	}
 			// ispod radimo isto za niz B
 	std::cout << "\n\n\tMolimo unesite brojeve niza B (unesite '-1' da zaustavite unos):\n\t\t";
 	while (true)
 	{
 		std::cin >> temp;
-		nizB.push_back(temp);
-		std::cout << "\t\t";
 		if (temp == -1)
 			break;
+		nizB.push_back(temp);
+		std::cout << "\t\t";
 	}
 
 	// Ispisujemo niz A, zatim B
@@ -134,15 +134,14 @@ void Adi_Zubic_Zadaca_5_Z2()
 	// (niz duzine 0 je uvijek podniz drugog niza X duzine).
 	// Poslije toga cu ispisati da B nije podniz niza A ukoliko je niz A duzine 0.
 	// (Ako je duzina niza A == 0, onda B nije podniz niza A; osim ako je i duzina niza B == 0, a
-	// naravno ta situacija je rijesena u if-u linije 137)
+	// naravno ta situacija je rijesena prvom ifu (ifu sljedece linije))
 	if (nizB.size() == 0)
-	{	// prazan niz je uvijek podniz nekog drugog, ja sam stavio da ispise da taj podniz (B) pocinje
-		// od indeksa 0 (indeksa 0 niza A).
-		std::cout << "\n\n\tNiz B je podniz niza A, i on, unutar niza A, pocinje od indeksa: 0";
+	{
+		std::cout << "\n\n\tNiz B je podniz niza A, buduci da je prazan niz uvijek podniz drugog niza X velicine.";
 		return;
 	}
 	if (nizA.size() == 0)
-	{	// U suprotnom, 
+	{
 		std::cout << "\n\n\tNiz B nije podniz niza A. :(";
 		return;
 	}
@@ -150,16 +149,25 @@ void Adi_Zubic_Zadaca_5_Z2()
 
 	int* rezultat = Adi_Zubic_Zadaca_5_Z2(&nizA[0], &nizA[nizA.size() - 1], &nizB[0], &nizB[nizB.size() - 1]);
 
-	// Funkcija vraca broj -1 ukoliko se niz B ne nalazi u nizu A
-	// ukoliko se to desi, ispisujemo da se niz B ne nalazi u nizu A
-	if (rezultat < 0)
+	// Funkcija vraca adresu varijable tacno iza kraja niza A, kako je trazeno u zadatku. Ako je ta adresa
+	// veca od zadnje arese niza A, onda ispisujemo da nije podniz.
+	if (rezultat > &nizA[nizA.size() - 1])
 	{
 		std::cout << "\n\n\tNiz B nije podniz niza A. :(";
 	}
 	else			// U suprotnom, ispisujemo rezultat.
 	{
-		std::cout << "\n\n\tNiz B je podniz niza A, i on, unutar niza A, pocinje od indeksa: "
-			<< rezultat;
+		int indeks = 0;
+		int* brojac = &nizA[0];
+		while (brojac != rezultat)		// petlja da izracuna na kojem se indeksu nalazi brojac
+		{
+			indeks++;
+			brojac++;
+		}
+
+		std::cout << "\n\n\tNiz B je podniz niza A, i on, unutar niza A, pocinje od indeksa: " << indeks;
 	}
+
+
 	std::cout << "\n\n\n";
 }
