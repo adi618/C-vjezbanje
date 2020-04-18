@@ -11,10 +11,10 @@
 
 struct Artikal {
 private:
-	std::string naziv;				// Dobar dan profesore, buduci da ste mi u mailu rekli da uz adekvatno objasnjenje mozemo mijenjati
-	int maxBrojArtikala;			// malo zadatke, odlucio sam upravo to da uradim. Ovo je nesto sto konstantno vidjam na internetu
+	std::string naziv;				// Dobar dan profesore, buduci da ste mi u mailu rekli da priznajete svako vlastito rjesenje uz
+	int maxBrojArtikala;			// komentare, odlucio sam malo da promjenim program. Ovo je nesto sto konstantno vidjam na internetu
 	int brojArtikala;				// pa sam odlucio da probam isprogramirati. U pitanju je koristenje "gettera" i "settera" da se
-	int minBrojArtikala;			// obezbjedi da se nekorektni unosi ne unose i da, u vecim projektima, smanji kolicina koda.
+	int minBrojArtikala;			// obezbjedi da se nekorektni unosi ne unose i da, u vecim projektima, smanji kolicinu koda.
 	int cijenaArtikla;				// Ideja gettera i settera jeste da su sve varijable zasticene u private sektoru strukture/klase
 	std::string imeDobavljaca;		// te da se njima upravlja samo preko funkcija koje mogu imati odredjene mjere prevencije protiv
 									// nekorektnih unosa, kao sto sam ja uradio.
