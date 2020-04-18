@@ -14,8 +14,9 @@
 //	zaista sortirana u skladu sa trazenim specifikacijama.
 
 
-/*	*Pocnite citati odavdje*  *Ovaj veliki blok teksta ne morate procitat tu sam opisao kako rade linked liste i njihovo poredjenje sa vektorima*
 
+
+/*															O linked listama:
 	- Eng. termin za trazeno: linked list
 	- Svaki element linked liste je ili struktura ili klasa.
 	- Svi elementi sadrze neku informaciju (u nasem slucaju: ime, prezime i prosjek) i vezu sa sljedecim elementom. Ta veza se uspostavlja
@@ -38,8 +39,118 @@
 			elementa.
 */
 
+struct Cvor
+{
+	friend class Mreza;		// Ova linija sluzi da dozvoli strukturi Mreza da pristupi privatnim varijablama strukture Cvor
+
+private:
+	std::string ime_i_prezime;
+	double prosjek;
+	Cvor* veza;		// svaki objekt strukture Cvor takodjer sadrzi pokazivac na neki drugi objekt strukture Cvor, i ovim putem se uspostavljaju
+					// veze izmedju svih objekata strukture Cvor, gdje prvi pokazuje na drugog, drugi na treceg i tako dalje.
+public:
+
+	Cvor(std::string ime_i_prezime_P, double prosjek_P)		// Ovo je konstruktor cija je osnova objasnjena na liniji 70, on ce uzeti ime, prezime
+		:ime_i_prezime(ime_i_prezime_P), prosjek(prosjek_P), veza(nullptr) {}	// i prosjek koji su dio strukture Cvor, i setat ih na valute
+};			// imena, prezimena i prosjeka koji smo proslijedili u konstruktor. (std::string ime_i_prezime_P, double prosjek_P) su varijable
+			// koje je konstruktor dobio kao rezultat linije 70, a ime_i_prezime i prosjek su varijable objekta strukture Cvor cije se
+			// valute setaju na proslijedjene. Takodjer pokazivac na sljedecu vezu setamo na nullptr.
+struct Mreza			// Nullptr cemo koristiti da znamo kada smo dosli do kraja linked liste, detaljnije na liniji 86
+{
+private:
+	Cvor* glava;
+
+public:
+	Mreza() :glava(nullptr) {}
+
+
+	void dodajNoviCvor(const std::string& ime_i_prezime, const double& prosjek)	// Ovo je funkcija u koju smo poslali ime, prezime i prosjek 
+	{																			// (po const referenci jer ih ne planiram mijenjati)		
+
+		Cvor* noviCvor = new Cvor(ime_i_prezime, prosjek);		// Novi objekt strukture Cvor. Struktura Cvor sadrzi konstruktor, tj.
+				// sadrzi funkciju koja se pokrece samo onda kada se novi objekat napravi. Taj konstruktor ce primiti varijable koje smo
+				// stavili u zagrade, tj. ime_i_prezime, prosjek. Na liniji 53 detaljnije objasnjeno
+		
+		if (glava == nullptr)	// Ukoliko je glava nullptr, to znaci da je lista prazna, te glavu pretvaramo u novi objekat, tj. objekat
+		{						// koji je korisnik upravo unio. Ovaj if ce se izvrsiti samo jednom, buduci da glava nece biti jednaka
+			glava = noviCvor;	// nullptr za svaki sljedeci element.
+		}
+		else
+		{
+			Cvor* trenutna = glava;			// Ako smo dosli do ovog koda, to znaci da imamo bar jedan objekat unutar nase liste,
+			Cvor* prijethodna = nullptr;	// tako da prijethodnu setamo na nullptr, dok trenutnu setamo na glavu. Drugim rijecima:
+					// glava je prvi element, a prijethodna je nullptr buduci da nemamo prijethodne jer je trenutna ustvari prva.
+					// Kasnije u kodu cemo iterirati i jednu i drugu, efekat koji cemo dobiti jeste da ce trenutna uvijek biti objekt koji
+					// trenutno analiziramo, a prijethodna onaj prije njega.
+
+			while (trenutna != nullptr)		// Ukoliko je trenutna nullptr, to znaci da smo dosli do kraja liste tako da stopamo iteraciju.
+			{
+				if (trenutna->prosjek < noviCvor->prosjek)	// Ukoliko je prosjek trenutnog objekta manji od prosjeka sljedeceg, znaci da
+				{											// smo dosli do dijela liste u koji zelimo ubaciti nas novo objekat, tako da 
+					break;									// prekidamo petlju (petlju koristimo samo da dodjemo do lokacije za stavljanje
+				}											// elementa, ispod petlje ga ustvari stavljamo u listu)
+				prijethodna = trenutna;		// ukoliko nismo jos dosli do dijela gdje ubacijemo objekt, prijethodnu pretvaramo u trenutnu,
+				trenutna = trenutna->veza;	// a trenutnu u sljedecu vezu. Ovo je ustvari nacin iteracije kroz listu
+			}
+			if ()
+			{
+
+			}
+			else
+			{
+				if (trenutna == glava)
+				{
+					noviCvor->veza = glava;
+					glava = noviCvor;
+				}
+				else
+				{
+					noviCvor->veza = trenutna;
+					prijethodna->veza = noviCvor;
+				}
+			}
+		}
+	}
+
+	void ispisiMrezu()
+	{
+		Cvor* iteracijskiPtr = glava;
+
+		while (iteracijskiPtr != nullptr)
+		{
+			std::cout << "\n\tIme i prezime studenta: " << iteracijskiPtr->ime_i_prezime;
+			std::cout << "\n\tProsjek studenta: " << iteracijskiPtr->prosjek;
+
+			iteracijskiPtr = iteracijskiPtr->veza;
+		}
+	}
+};
+
+
 void Adi_Zubic_Zadaca_5_Z4()
 {
+	double prosjek;
+	std::string ime_i_prezime;
 
+	Mreza* mreza = new Mreza();		// Pravimo novi objekt klase Mreza
 
+	while (true)
+	{
+		std::cout << "Unesite ime studenta (da zaustavite ostavite unos prazan):\n\t\t";
+
+		getline(std::cin, ime_i_prezime);	// Unosimo string za ime i prezime
+
+		if (ime_i_prezime == "")			// Kada korisnik unese praznu liniju prekidamo petlju, tj. unos
+			break;
+
+		std::cout << "Unesite prosjek studenta:\n\t\t";
+		std::cin >> prosjek;
+		std::cin.ignore();
+
+		mreza->dodajNoviCvor(ime_i_prezime, prosjek);		// dodajNoviCvor je funkcija unutar strukture mreza,
+	}														// u nju saljemo ime i prezime i prosjek.
+	
+
+	mreza->ispisiMrezu();
 }
+

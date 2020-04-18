@@ -13,7 +13,7 @@
 //se koristi napisana funkcija na dva fiksna niza stringova
 
 
-int Adi_Zubic_Zadaca_5_Z2(int* A_start, int* A_end, int* B_start, int* B_end)
+int* Adi_Zubic_Zadaca_5_Z2(int* A_start, int* A_end, int* B_start, int* B_end)
 {
 	int duzinaA = (reinterpret_cast<std::uintptr_t>(A_end) - reinterpret_cast<std::uintptr_t>(A_start) + sizeof(*A_start));
 	duzinaA = duzinaA / sizeof(*A_start);
@@ -34,7 +34,7 @@ int Adi_Zubic_Zadaca_5_Z2(int* A_start, int* A_end, int* B_start, int* B_end)
 	// dok ne dodjemo do kraja.
 
 	if (duzinaB > duzinaA)
-		return -1;
+		return A_end;
 
 	// Ukoliko je niz B veci od niza A onda niz B sigurno nije podniz A, vracamo -1
 
@@ -52,11 +52,11 @@ int Adi_Zubic_Zadaca_5_Z2(int* A_start, int* A_end, int* B_start, int* B_end)
 			}											// i ukoliko se petlja zavrsi bez breakanja
 		}												// to znaci da je j onoliko veliko koliko i 
 		if (j == duzinaB)								// duzina niza B, tako da u ovoj liniji
-			return i;									// vracamo indeks.
+			return &i;									// vracamo indeks.
 	}
 
 
-	return -1;		// vracamo -1 za situacije gdje niz B nije unutar niza A
+	return A_end;		// vracamo -1 za situacije gdje niz B nije unutar niza A
 }/*
 	Ovu istu metodu mozemo koristiti i za pretrazivanje stringova.
 	Niz cuva elemente tipa integer, a string bi cuvao elementer tipa char, tako da jedino sto bi trebali
@@ -143,12 +143,12 @@ void Adi_Zubic_Zadaca_5_Z2()
 	}
 	if (nizA.size() == 0)
 	{	// U suprotnom, 
-		std::cout << "\n\n\tNiz B je podniz niza A, i on, unutar niza A, pocinje od indeksa: 0";
+		std::cout << "\n\n\tNiz B nije podniz niza A. :(";
 		return;
 	}
 
 
-	int rezultat = Adi_Zubic_Zadaca_5_Z2(&nizA[0], &nizA[nizA.size() - 1], &nizB[0], &nizB[nizB.size() - 1]);
+	int* rezultat = Adi_Zubic_Zadaca_5_Z2(&nizA[0], &nizA[nizA.size() - 1], &nizB[0], &nizB[nizB.size() - 1]);
 
 	// Funkcija vraca broj -1 ukoliko se niz B ne nalazi u nizu A
 	// ukoliko se to desi, ispisujemo da se niz B ne nalazi u nizu A
