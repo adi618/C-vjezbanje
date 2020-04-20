@@ -70,7 +70,7 @@ public:
 		Cvor* noviCvor = new Cvor(ime_i_prezime, prosjek);		// Novi objekt strukture Cvor. Struktura Cvor sadrzi konstruktor, tj.
 				// sadrzi funkciju koja se pokrece samo onda kada se novi objekat napravi. Taj konstruktor ce primiti varijable koje smo
 				// stavili u zagrade, tj. ime_i_prezime, prosjek. Na liniji 53 detaljnije objasnjeno
-		
+
 		if (glava == nullptr)	// Ukoliko je glava nullptr, to znaci da je lista prazna, te glavu pretvaramo u novi objekat, tj. objekat
 		{						// koji je korisnik upravo unio. Ovaj if ce se izvrsiti samo jednom, buduci da glava nece biti jednaka
 			glava = noviCvor;	// nullptr za svaki sljedeci objekt.
@@ -149,7 +149,7 @@ void Adi_Zubic_Zadaca_5_Z4()
 		mreza->dodajNoviCvor(ime_i_prezime, prosjek);		// dodajNoviCvor je funkcija unutar klase mreza,
 	}														// u nju saljemo ime i prezime i prosjek.
 	
-
 	mreza->ispisiMrezu();	// i na kraju pozivamo funkciju ispisiMrezu koja je dio klase mreza, detaljnije objasnjenje pored same funkcije
+	
+	std::cout << "\n\n";
 }
-
