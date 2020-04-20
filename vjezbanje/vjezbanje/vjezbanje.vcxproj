@@ -211,6 +211,7 @@
     <ClCompile Include="Source2.cpp" />
     <ClCompile Include="sqrt without sqrt.cpp" />
     <ClCompile Include="Stringovi.cpp" />
+    <ClCompile Include="Subnetting.cpp" />
     <ClCompile Include="Sum of Numbers.cpp" />
     <ClCompile Include="Unique in Order.cpp" />
     <ClCompile Include="Valid Braces.cpp" />

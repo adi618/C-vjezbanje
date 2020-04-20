@@ -355,6 +355,9 @@
     <ClCompile Include="Array comparison.cpp">
       <Filter>Source Files\Random</Filter>
     </ClCompile>
+    <ClCompile Include="Subnetting.cpp">
+      <Filter>Source Files\Random</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="pch.h">
