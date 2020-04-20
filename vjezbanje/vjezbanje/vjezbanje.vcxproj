@@ -154,6 +154,7 @@
     <ClCompile Include="Amend the Sentence.cpp" />
     <ClCompile Include="Are Similar.cpp" />
     <ClCompile Include="Array Change.cpp" />
+    <ClCompile Include="Array comparison.cpp" />
     <ClCompile Include="Array Max N Consecutive Sum.cpp" />
     <ClCompile Include="Array Maximal Adjacent Difference.cpp" />
     <ClCompile Include="Arrays Left Rotation.cpp" />

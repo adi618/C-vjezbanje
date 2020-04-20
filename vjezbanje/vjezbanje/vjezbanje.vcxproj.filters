@@ -352,6 +352,9 @@
     <ClCompile Include="Adi_Zubic_Zadaca_5_Z4.cpp">
       <Filter>Source Files\Fax\Zadace</Filter>
     </ClCompile>
+    <ClCompile Include="Array comparison.cpp">
+      <Filter>Source Files\Random</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="pch.h">
