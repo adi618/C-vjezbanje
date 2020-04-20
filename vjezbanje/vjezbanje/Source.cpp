@@ -3,7 +3,7 @@
 
 
 using namespace std;
-//kening kod
+//kenin kod
 struct Cvor {
 
     string imePrezime;
