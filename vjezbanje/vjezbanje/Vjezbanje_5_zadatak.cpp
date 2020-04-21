@@ -4,22 +4,7 @@
 
 using namespace std;
 
-bool prost(int n, int i)
-{
-	if (n < 2)
-		return false;
-
-	if (n == 2)
-		return true;
-
-	if (n % i == 0)
-		return false;
-
-	if (i > n / 2)
-		return true;
-	else
-		return prost(n, i + 1);
-}
+bool prost(int, int);
 
 
 void Vjezbanje_5_zadatak()

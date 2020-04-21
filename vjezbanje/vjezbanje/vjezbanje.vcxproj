@@ -147,6 +147,12 @@
     <ClCompile Include="Adi_Zubic_Zadaca_5_Z2.cpp" />
     <ClCompile Include="Adi_Zubic_Zadaca_5_Z3.cpp" />
     <ClCompile Include="Adi_Zubic_Zadaca_5_Z4.cpp" />
+    <ClCompile Include="Adi_Zubic_Zadaca_Z1_ZaDobrovoljce.cpp" />
+    <ClCompile Include="Adi_Zubic_Zadaca_Z2_ZaDobrovoljce.cpp" />
+    <ClCompile Include="Adi_Zubic_Zadaca_Z3_ZaDobrovoljce.cpp" />
+    <ClCompile Include="Adi_Zubic_Zadaca_Z4_ZaDobrovoljce.cpp" />
+    <ClCompile Include="Adi_Zubic_Zadaca_Z5_ZaDobrovoljce.cpp" />
+    <ClCompile Include="Adi_Zubic_Zadaca_Z6_ZaDobrovoljce.cpp" />
     <ClCompile Include="All Longest Strings.cpp" />
     <ClCompile Include="Almost Increasing Sequence.cpp" />
     <ClCompile Include="Alternating Characters.cpp" />
@@ -234,6 +240,7 @@
     <ClCompile Include="Zadaca_6_zadatak.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Benchmark.h" />
     <ClInclude Include="pch.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

@@ -358,10 +358,31 @@
     <ClCompile Include="Subnetting.cpp">
       <Filter>Source Files\Random</Filter>
     </ClCompile>
+    <ClCompile Include="Adi_Zubic_Zadaca_Z1_ZaDobrovoljce.cpp">
+      <Filter>Source Files\Fax\Zadace</Filter>
+    </ClCompile>
+    <ClCompile Include="Adi_Zubic_Zadaca_Z2_ZaDobrovoljce.cpp">
+      <Filter>Source Files\Fax\Zadace</Filter>
+    </ClCompile>
+    <ClCompile Include="Adi_Zubic_Zadaca_Z3_ZaDobrovoljce.cpp">
+      <Filter>Source Files\Fax\Zadace</Filter>
+    </ClCompile>
+    <ClCompile Include="Adi_Zubic_Zadaca_Z4_ZaDobrovoljce.cpp">
+      <Filter>Source Files\Fax\Zadace</Filter>
+    </ClCompile>
+    <ClCompile Include="Adi_Zubic_Zadaca_Z5_ZaDobrovoljce.cpp">
+      <Filter>Source Files\Fax\Zadace</Filter>
+    </ClCompile>
+    <ClCompile Include="Adi_Zubic_Zadaca_Z6_ZaDobrovoljce.cpp">
+      <Filter>Source Files\Fax\Zadace</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="pch.h">
       <Filter>Source Files\PCH</Filter>
+    </ClInclude>
+    <ClInclude Include="Benchmark.h">
+      <Filter>Source Files\Random</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

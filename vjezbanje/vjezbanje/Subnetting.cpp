@@ -104,8 +104,51 @@
 
 
 
+						IP: 192.168.100.0/24
+
+	network				11000000.10101000.01100100.00000000
+	subnet mask			11111111.11111111.11111111.00000000
+
+	range				192.168.100.0 - 192.168.100.255
+
+	podijeliti mrezu na min 5 podmrezi
+
+	da bi podijelili na 5 podmrezi moramo uzeti 3 bita, 2 bita daju samo 3 podmreze
+	3 bita ce nam dati 8 podmreza:
+
+	network 1 podmreze	11000000.10101000.01100100.00000000
+	network 2 podmreze	11000000.10101000.01100100.00100000
+	network 3 podmreze	11000000.10101000.01100100.01000000
+	network 4 podmreze	11000000.10101000.01100100.01100000
+	network 5 podmreze	11000000.10101000.01100100.10000000
+	network 6 podmreze	11000000.10101000.01100100.10100000
+	network 7 podmreze	11000000.10101000.01100100.11000000
+	network 8 podmreze	11000000.10101000.01100100.11100000
 
 
+	network 1 podmreze	192.168.100.0
+	network 2 podmreze	192.168.100.32
+	network 3 podmreze	192.168.100.64
+	network 4 podmreze	192.168.100.96
+	network 5 podmreze	192.168.100.128
+	network 6 podmreze	192.168.100.160
+	network 7 podmreze	192.168.100.192
+	network 8 podmreze	192.168.100.224
+
+
+	range 1 podmreze 	192.168.100.1 - 192.168.100.31
+	range 1 podmreze	192.168.100.33 - 192.168.100.63
+	range 1 podmreze	192.168.100.65 - 192.168.100.95
+	range 1 podmreze	192.168.100.97 - 192.168.100.127
+	range 1 podmreze	192.168.100.129 - 192.168.100.159
+	range 1 podmreze	192.168.100.161 - 192.168.100.191
+	range 1 podmreze	192.168.100.193 - 192.168.100.223
+	range 1 podmreze	192.168.100.225 - 192.168.100.254
+
+
+
+
+	
 
 
 */
