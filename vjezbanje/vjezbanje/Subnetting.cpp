@@ -195,4 +195,55 @@
 	
 
 
+
+
+
+
+
+
+
+
+
+						IP: 172.16.0.0/16		napraviti za 485 hostova
+
+
+	Da bismo dobili 485 hostova potrebno nam je 9 bita.
+	2 ^ 8 - 2 je 254, sto nije dovoljno
+	2 ^ 9 - 2 je 510, sto je dovoljno
+	oduzimamo 2 zato sto racunamo hostove
+
+	network				10101100.00010000.00000000.00000000
+
+	network				10101100.00010000.0000000 0.00000000
+				9 bita smo odvojili za hostove, ostatak cemo pretvoriti u podmreze
+				sa ovim mozemo napraviti 2 ^ 7 tj. 128 podmreza
+
+
+				
+	Sve podmreze ce imati subnet masku /23
+
+	1 podmreza ce biti u rasponu od 172.16.0.0 - 172.16.1.255
+	2 podmreza ce biti u rasponu od 172.16.2.0 - 172.16.3.255
+	3 podmreza ce biti u rasponu od 172.16.4.0 - 172.16.5.255
+	4 podmreza ce biti u rasponu od 172.16.6.0 - 172.16.7.255
+	5 podmreza ce biti u rasponu od 172.16.8.0 - 172.16.9.255
+
+	...
+
+	128 podmreza ce biti u rasponu od 172.16.254.0 - 172.16.255.255
+
+
+
+	Ako zelimo mreze u rasponu a da uzimamo u obzir koje su iskoristive:
+
+	1 podmreza ce biti u rasponu od 172.16.0.1 - 172.16.1.254
+	2 podmreza ce biti u rasponu od 172.16.2.1 - 172.16.3.254
+	3 podmreza ce biti u rasponu od 172.16.4.1 - 172.16.5.254
+	4 podmreza ce biti u rasponu od 172.16.6.1 - 172.16.7.254
+	5 podmreza ce biti u rasponu od 172.16.8.1 - 172.16.9.254
+
+	...
+
+	128 podmreza ce biti u rasponu od 172.16.254.1 - 172.16.255.254
+
 */
