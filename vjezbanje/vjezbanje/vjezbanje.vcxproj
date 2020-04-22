@@ -152,7 +152,7 @@
     <ClCompile Include="Adi_Zubic_Zadaca_Z3_ZaDobrovoljce.cpp" />
     <ClCompile Include="Adi_Zubic_Zadaca_Z4_ZaDobrovoljce.cpp" />
     <ClCompile Include="Adi_Zubic_Zadaca_Z5_ZaDobrovoljce.cpp" />
-    <ClCompile Include="Adi_Zubic_Zadaca_Z6_ZaDobrovoljce.cpp" />
+    <ClCompile Include="Adi_Zubic_Zadaca_Z8_ZaDobrovoljce.cpp" />
     <ClCompile Include="All Longest Strings.cpp" />
     <ClCompile Include="Almost Increasing Sequence.cpp" />
     <ClCompile Include="Alternating Characters.cpp" />

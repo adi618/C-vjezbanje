@@ -373,7 +373,7 @@
     <ClCompile Include="Adi_Zubic_Zadaca_Z5_ZaDobrovoljce.cpp">
       <Filter>Source Files\Fax\Zadace</Filter>
     </ClCompile>
-    <ClCompile Include="Adi_Zubic_Zadaca_Z6_ZaDobrovoljce.cpp">
+    <ClCompile Include="Adi_Zubic_Zadaca_Z8_ZaDobrovoljce.cpp">
       <Filter>Source Files\Fax\Zadace</Filter>
     </ClCompile>
   </ItemGroup>

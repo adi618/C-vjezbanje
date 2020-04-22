@@ -17,26 +17,26 @@
 
 
 /*															O linked listama:
-	- Eng. termin za trazeno: linked list
-	- Svaki objekt linked liste je ili struktura ili klasa.
-	- Svi objekti sadrze neku informaciju (u nasem slucaju: ime, prezime i prosjek) i vezu sa sljedecim objektom. Ta veza se uspostavlja
-		pomocu pokazivaca.
-	- Prvi objekt se zove glava (end. head), on pokazuje na drugi objekt. Drugi objekt pokazuje na treci objekt,
-		i tako sve do zadnjeg objekta, koji pokazuje na null vrijednost. Null vrijednost se pise razlicito u razlicitim jezicima,
-		u C++u je to nullptr (pokazivac koji je samo deklarisan, on ustvari ne pokazuje ni na sta).
+- Eng. termin za trazeno: linked list
+- Svaki objekt linked liste je ili struktura ili klasa.
+- Svi objekti sadrze neku informaciju (u nasem slucaju: ime, prezime i prosjek) i vezu sa sljedecim objektom. Ta veza se uspostavlja
+	pomocu pokazivaca.
+- Prvi objekt se zove glava (end. head), on pokazuje na drugi objekt. Drugi objekt pokazuje na treci objekt,
+	i tako sve do zadnjeg objekta, koji pokazuje na null vrijednost. Null vrijednost se pise razlicito u razlicitim jezicima,
+	u C++u je to nullptr (pokazivac koji je samo deklarisan, on ustvari ne pokazuje ni na sta).
 
-	- Linked liste, u poredjenju sa vektorima, imaju veliku prednost kada je u pitanju pisanje i brisanje elemenata:
-		- Linked liste: Da bi ubalici objekt na trecu poziciju, potrebno je samo promjeniti pokazivac druge pozicije da pokazuje na novi
-			objekt, i pokazivac novog objekta setati da pokazuje na, prijethodno trecu, sada cetvrtu poziciju.
-		- Vektori: Medjutim, da ubacimo objekt na trecu poziciju vektora, potrebno je napraviti novi vektor koji je za 1 veci od trenutnog,
-			kopirati prvu, drugu poziciju, ubaciti zeljeni objekt, i onda ubaciti sve ostale objekte koji bi naravno bili na indeksu koji
-			je za 1 veci od prijethodnog objekta.
-		- Linked liste konkretno operaciju brisanja i pisanja rade u konstantnom vremenu (O(1)), tj. nezavisno o broju elemenata uvijek je potrebna
-			ista kolicina vremena da se ubaci objekt na neku poziciju, dok vektori ovu operaciju rade u linearnom vremenu, tj. vise
-			elemenata = duze se radi operacija (O(n) kompleksnost).
-		- S druge strane, za pronalazenje X objekta, kod vektora mozemo koristiti algoritme kao sto su binary search (O(log n) kompleksnost),
-			dok za linked liste ne mozemo koristiti te algoritme, vec moramo krenuti od pocetka liste i ici dok ne dodjemo do zeljenog
-			objekta.
+- Linked liste, u poredjenju sa vektorima, imaju veliku prednost kada je u pitanju pisanje i brisanje elemenata:
+	- Linked liste: Da bi ubalici objekt na trecu poziciju, potrebno je samo promjeniti pokazivac druge pozicije da pokazuje na novi
+		objekt, i pokazivac novog objekta setati da pokazuje na, prijethodno trecu, sada cetvrtu poziciju.
+	- Vektori: Medjutim, da ubacimo objekt na trecu poziciju vektora, potrebno je napraviti novi vektor koji je za 1 veci od trenutnog,
+		kopirati prvu, drugu poziciju, ubaciti zeljeni objekt, i onda ubaciti sve ostale objekte koji bi naravno bili na indeksu koji
+		je za 1 veci od prijethodnog objekta.
+	- Linked liste konkretno operaciju brisanja i pisanja rade u konstantnom vremenu (O(1)), tj. nezavisno o broju elemenata uvijek je potrebna
+		ista kolicina vremena da se ubaci objekt na neku poziciju, dok vektori ovu operaciju rade u linearnom vremenu, tj. vise
+		elemenata = duze se radi operacija (O(n) kompleksnost).
+	- S druge strane, za pronalazenje X objekta, kod vektora mozemo koristiti algoritme kao sto su binary search (O(log n) kompleksnost),
+		dok za linked liste ne mozemo koristiti te algoritme, vec moramo krenuti od pocetka liste i ici dok ne dodjemo do zeljenog
+		objekta.
 */
 
 struct Cvor
