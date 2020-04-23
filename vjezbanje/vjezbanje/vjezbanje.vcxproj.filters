@@ -376,6 +376,21 @@
     <ClCompile Include="Adi_Zubic_Zadaca_Z8_ZaDobrovoljce.cpp">
       <Filter>Source Files\Fax\Zadace</Filter>
     </ClCompile>
+    <ClCompile Include="Adi_Zubic_Zadaca_Z12_ZaDobrovoljce.cpp">
+      <Filter>Source Files\Fax\Zadace</Filter>
+    </ClCompile>
+    <ClCompile Include="Adi_Zubic_Zadaca_Z13_ZaDobrovoljce.cpp">
+      <Filter>Source Files\Fax\Zadace</Filter>
+    </ClCompile>
+    <ClCompile Include="Adi_Zubic_Zadaca_Z14_ZaDobrovoljce.cpp">
+      <Filter>Source Files\Fax\Zadace</Filter>
+    </ClCompile>
+    <ClCompile Include="Adi_Zubic_Zadaca_Z15_ZaDobrovoljce.cpp">
+      <Filter>Source Files\Fax\Zadace</Filter>
+    </ClCompile>
+    <ClCompile Include="Adi_Zubic_Zadaca_Z16_ZaDobrovoljce.cpp">
+      <Filter>Source Files\Fax\Zadace</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="pch.h">

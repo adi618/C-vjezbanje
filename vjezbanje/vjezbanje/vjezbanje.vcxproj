@@ -147,6 +147,11 @@
     <ClCompile Include="Adi_Zubic_Zadaca_5_Z2.cpp" />
     <ClCompile Include="Adi_Zubic_Zadaca_5_Z3.cpp" />
     <ClCompile Include="Adi_Zubic_Zadaca_5_Z4.cpp" />
+    <ClCompile Include="Adi_Zubic_Zadaca_Z12_ZaDobrovoljce.cpp" />
+    <ClCompile Include="Adi_Zubic_Zadaca_Z13_ZaDobrovoljce.cpp" />
+    <ClCompile Include="Adi_Zubic_Zadaca_Z14_ZaDobrovoljce.cpp" />
+    <ClCompile Include="Adi_Zubic_Zadaca_Z15_ZaDobrovoljce.cpp" />
+    <ClCompile Include="Adi_Zubic_Zadaca_Z16_ZaDobrovoljce.cpp" />
     <ClCompile Include="Adi_Zubic_Zadaca_Z1_ZaDobrovoljce.cpp" />
     <ClCompile Include="Adi_Zubic_Zadaca_Z2_ZaDobrovoljce.cpp" />
     <ClCompile Include="Adi_Zubic_Zadaca_Z3_ZaDobrovoljce.cpp" />
