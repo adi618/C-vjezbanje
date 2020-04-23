@@ -9,6 +9,7 @@
 //11.9 20.5 19.8 14.9 itd.
 //Ova mjerenja potrebno je ucitati u niz struktura oblika :
 //
+//struct mjerenja { float u9, u13, u16, u20; } sarajevo[731];
 //
 //Ovaj niz treba sortirati po mjerenju u 13 sati i zatim upisati u datoteku sortirano13 - sarajevo.txt.Takode na
 //ekranu treba ispisati ukupan broj ucitanih mjerenja, broj dana u kojima temperatura u 9 sati nije bila najmanja te
