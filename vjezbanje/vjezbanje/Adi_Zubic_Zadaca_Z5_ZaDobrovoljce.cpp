@@ -40,12 +40,13 @@ bool prost(int n, int i = 3)
 		return false;	// vratiti true i time prekinuti funkciju. Tako da, ukoliko je broj dijeljiv sa 2 mozemo odmah vratiti false.
 						// Nije potrebno dalje provjeravati.
 
-	if (n % i == 0)		// Ukoliko je dijeljiv sa i onda vracamo false, a i cemo povecavati u buducim ponavljanjima funkcije
-		return false;
-
 	if (i > sqrt(n))	// i povecavamo do sqrt(n), zato sto, ako pogledamo sve brojeve koji dijele n, primjetit cemo da su brojevi
 		return true;	// iznad sqrt(n) samo obrnute verzije brojeva napisanih ispod sqrt(n), tako da nema potrebe provjeravati
 						// dijeljivost za brojeve vece od sqrt(n).
+
+	if (n % i == 0)		// Ukoliko je dijeljiv sa i onda vracamo false, a i cemo povecavati u buducim ponavljanjima funkcije
+		return false;
+
 	return prost(n, i + 2);		// Ako je funkcija dosla do ove linije, ponavljamo s tim da povecavamo i za 2. Razlog povecavanja sa 2
 }								// jeste taj da je bespotrebno provjeravati da li su parni brojevi prosti buduci da smo u ranijem
 								// if-u vec izbaciji sve parne brojeve (koji su veci od 2)
@@ -62,7 +63,7 @@ void Adi_Zubic_Zadaca_Z5_ZaDobrovoljce()
 	std::cout << "\n\tBrojevi blizanci do unesenog broja:\n";
 
 	Timer timer;
-	for (int i = 0; i < n - 2; i++)
+	for (int i = 0; i < n - 1; i++)
 	{
 		if (prost(i) && prost(i + 2))
 			std::cout << "\n\tBroj " << i << " i " << i + 2 << " su blizanci";

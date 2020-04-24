@@ -391,6 +391,9 @@
     <ClCompile Include="Adi_Zubic_Zadaca_Z16_ZaDobrovoljce.cpp">
       <Filter>Source Files\Fax\Zadace</Filter>
     </ClCompile>
+    <ClCompile Include="pi calculator.cpp">
+      <Filter>Source Files\Random</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="pch.h">

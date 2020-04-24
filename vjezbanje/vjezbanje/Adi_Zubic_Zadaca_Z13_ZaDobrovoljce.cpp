@@ -16,6 +16,7 @@ int sumaCifara(int n)
 
 void popuni(int* arr, int brBrojeva, int maxBroj)
 {
+	srand(time(NULL));
 	for (int i = 0; i < brBrojeva; i++) // petlja koja generise random brojeve manje od maxBroj
 		arr[i] = rand() % maxBroj + 1;
 }

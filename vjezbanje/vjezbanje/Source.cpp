@@ -12,6 +12,8 @@ void Adi_Zubic_Zadaca_Z13_ZaDobrovoljce();
 void Adi_Zubic_Zadaca_Z14_ZaDobrovoljce();
 void Adi_Zubic_Zadaca_Z15_ZaDobrovoljce();
 void Adi_Zubic_Zadaca_Z16_ZaDobrovoljce();
+void Adi_Zubic_Zadaca_Z4_ZaDobrovoljce();
+void picalculator();
 
 
 int main()

@@ -209,6 +209,7 @@
       <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">pch.h</PrecompiledHeaderFile>
       <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">pch.h</PrecompiledHeaderFile>
     </ClCompile>
+    <ClCompile Include="pi calculator.cpp" />
     <ClCompile Include="Repeated String.cpp" />
     <ClCompile Include="Reverse in Parentheses.cpp" />
     <ClCompile Include="Reverse Vowels of String.cpp" />

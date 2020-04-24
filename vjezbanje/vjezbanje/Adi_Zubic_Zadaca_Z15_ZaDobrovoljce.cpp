@@ -41,7 +41,7 @@ void Adi_Zubic_Zadaca_Z15_ZaDobrovoljce()
 
 	for (int num : arr)
 	{
-		if (num % broj == 0)
+		if (num % broj == 0)			// uspisuje sve brojeve niza koji su dijeljivi sa brojem varijable broj
 			std::cout << num << "  ";
 	}
 	std::cout << "\n\n";
