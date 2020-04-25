@@ -83,6 +83,12 @@
     <Filter Include="Source Files\Codesignal\Arcade\12 - Land of Logic">
       <UniqueIdentifier>{44291059-79f0-4fb8-8820-83d93bd88ead}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\ZTM">
+      <UniqueIdentifier>{c76de681-c869-4050-b1a3-903f296d1484}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\LeetCode">
+      <UniqueIdentifier>{3832afd5-8c8d-4363-bce9-81b4897cade5}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Source.cpp">
@@ -393,6 +399,21 @@
     </ClCompile>
     <ClCompile Include="pi calculator.cpp">
       <Filter>Source Files\Random</Filter>
+    </ClCompile>
+    <ClCompile Include="Contains Common Item.cpp">
+      <Filter>Source Files\ZTM</Filter>
+    </ClCompile>
+    <ClCompile Include="Merge Arrays.cpp">
+      <Filter>Source Files\ZTM</Filter>
+    </ClCompile>
+    <ClCompile Include="TwoSum.cpp">
+      <Filter>Source Files\LeetCode</Filter>
+    </ClCompile>
+    <ClCompile Include="Find sum of array numbers in sorted array.cpp">
+      <Filter>Source Files\ZTM</Filter>
+    </ClCompile>
+    <ClCompile Include="Move Zeroes.cpp">
+      <Filter>Source Files\LeetCode</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

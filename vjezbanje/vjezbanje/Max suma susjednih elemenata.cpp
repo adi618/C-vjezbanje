@@ -4,7 +4,7 @@
 
 using namespace std;
 
-int array_Max_Sum_Consecutive_Elements(vector <int>& vector)		//Kadanes algorithm
+int array_Max_Sum_Consecutive_Elements(vector <int>& vector)
 {
 	int Max = vector[0];
 	int Sum = Max;

@@ -177,9 +177,11 @@
     <ClCompile Include="Bubble Sort.cpp" />
     <ClCompile Include="Common Character Count 2.cpp" />
     <ClCompile Include="Common Character Count.cpp" />
+    <ClCompile Include="Contains Common Item.cpp" />
     <ClCompile Include="Counting Valleys.cpp" />
     <ClCompile Include="Duplicate Encoder.cpp" />
     <ClCompile Include="Fibonacci.cpp" />
+    <ClCompile Include="Find sum of array numbers in sorted array.cpp" />
     <ClCompile Include="Find the Parity Outlier.cpp" />
     <ClCompile Include="First Duplicate - Optimized.cpp" />
     <ClCompile Include="First Duplicate.cpp" />
@@ -193,8 +195,10 @@
     <ClCompile Include="Matrix Elements Sum (Ghost Building).cpp" />
     <ClCompile Include="Max Array Sum.cpp" />
     <ClCompile Include="Max suma susjednih elemenata.cpp" />
+    <ClCompile Include="Merge Arrays.cpp" />
     <ClCompile Include="MergeSort.cpp" />
     <ClCompile Include="Minimum Swaps 2.cpp" />
+    <ClCompile Include="Move Zeroes.cpp" />
     <ClCompile Include="N rastaviti na sve moguce kombinacije X sabiraka.cpp" />
     <ClCompile Include="New Year Chaos.cpp" />
     <ClCompile Include="OOP.cpp" />
@@ -225,6 +229,7 @@
     <ClCompile Include="Stringovi.cpp" />
     <ClCompile Include="Subnetting.cpp" />
     <ClCompile Include="Sum of Numbers.cpp" />
+    <ClCompile Include="TwoSum.cpp" />
     <ClCompile Include="Unique in Order.cpp" />
     <ClCompile Include="Valid Braces.cpp" />
     <ClCompile Include="Valid Sudoku.cpp" />
