@@ -69,6 +69,18 @@ public:
 		}
 	}
 
+	void traverseNodeToIndex(Node*& current, int index)		// O(n)
+	{
+		while (current != nullptr)
+		{
+			if (index == 1)
+				break;
+
+			index--;
+			current = current->next;
+		}
+	}
+
 	void insertNodeAtIndex(int num, int index)		// O(n)
 	{
 		if (invalidIndex(index))
@@ -100,6 +112,39 @@ public:
 		totalNodes++;
 	}
 
+	void popNode()
+	{
+		if (listIsEmpty())
+			return;
+
+		// not finished
+	}
+
+	void removeNodeAtIndex(int index)
+	{
+		if (invalidIndex(index))
+			return;
+
+		Node* current = head;
+		totalNodes--;
+		
+		if (index == 0)
+		{
+			head = head->next;
+			free(current);
+			return;
+		}
+
+		traverseNodeToIndex(current, index);
+
+		Node* temp = current->next->next;
+		free(current->next);
+		current->next = temp;
+
+		if (index == totalNodes)
+			tail = current;
+	}
+
 	void printNodes()		// O(n)
 	{
 		Node* current = head;
@@ -108,7 +153,7 @@ public:
 		{
 			while (current != nullptr)
 			{
-				std::cout << current->number << "-->";
+				std::cout << current->number << "--> ";
 				current = current->next;
 			}
 			std::cout << "nullptr";
@@ -133,6 +178,17 @@ public:
 		}
 		return false;
 	}
+
+	bool listIsEmpty()
+	{
+		if (totalNodes == 0)
+		{
+			std::cout << "\n\t\tNothing to remove!\n\n";
+			system("pause");
+			return true;
+		}
+		return false;
+	}
 };
 
 
@@ -150,10 +206,12 @@ void singlyLinkedList()
 		myList.printNodes();
 
 		std::cout << "\n\n\tChoose an option:"
-			<< "\n\t\t1 - Add a number to the end of the list (append)"
-			<< "\n\t\t2 - Add a number to the start of the list (prepend)"
+			<< "\n\t\t1 - Add a number to the end of the list (append / push)"
+			<< "\n\t\t2 - Add a number to the beginning of the list (prepend)"
 			<< "\n\t\t3 - Add a number at a specific index of the list (insert)"
-			<< "\n\t\t4 - Remove the number at the end of the list"
+			<< "\n\t\t4 - Remove the last number of the list (pop)"
+			<< "\n\t\t5 - Remove the first number of the list"
+			<< "\n\t\t6 - Remove the number at a specific index of the list (remove)"
 			<< "\n\t\t10 - Exit"
 			<< "\n\n\t\tOption: ";
 
@@ -179,6 +237,22 @@ void singlyLinkedList()
 			std::cin >> index;
 			myList.insertNodeAtIndex(num, index);
 		}
+		else if (option == 4)
+		{
+			
+		}
+		else if (option == 5)
+		{
+
+		}
+		else if (option == 6)
+		{
+			if (myList.listIsEmpty())
+				continue;
+			std::cout << "\n\t\tEnter the index: ";
+			std::cin >> index;
+			myList.removeNodeAtIndex(index);
+		}
 		else if (option == 10)
 			break;
 		else
@@ -186,6 +260,5 @@ void singlyLinkedList()
 			std::cout << "\n\t\tInvalid option!\n\n";
 			system("pause");
 		}
-
 	}
 }
