@@ -7,5 +7,5 @@ void doublyLinkedList();
 
 int main()
 {
-	doublyLinkedList();
+	singlyLinkedList();
 }
