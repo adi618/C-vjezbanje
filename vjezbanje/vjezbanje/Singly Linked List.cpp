@@ -114,7 +114,7 @@ public:
 		totalNodes++;
 	}
 
-	void popNode()
+	void popNode()		// O(1)
 	{
 		Node* current = head;
 
@@ -124,7 +124,7 @@ public:
 		return;
 	}
 
-	void removeNodeAtIndex(int index)
+	void removeNodeAtIndex(int index)		// O(n)
 	{
 		if (invalidIndex(index))
 			return;
@@ -182,7 +182,7 @@ public:
 		return false;
 	}
 
-	bool listIsEmpty()
+	bool listIsEmpty()		// O(1)
 	{
 		if (totalNodes == 0)
 		{
