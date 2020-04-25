@@ -123,13 +123,22 @@ public:
 
 	void removeFirstNode()		// O(1)
 	{
-		Node* current = head;
+		Node* temp = head;
 
 		head = head->nextNode;
 		head->prevNode = nullptr;
-		free(current);
+		free(temp);
 		totalNodes--;
-		return;
+	}
+
+	void popNode()		// O(1)
+	{
+		Node* temp = tail;
+
+		tail = tail->prevNode;
+		tail->nextNode = nullptr;
+		free(temp);
+		totalNodes--;
 	}
 
 	void removeNodeAtIndex(int index)		// O(n)
@@ -140,6 +149,12 @@ public:
 		if (index == 0)
 		{
 			removeFirstNode();
+			return;
+		}
+
+		if (index == totalNodes - 1)
+		{
+			popNode();
 			return;
 		}
 
@@ -183,7 +198,7 @@ public:
 
 	bool invalidIndex(int index)		// O(1)
 	{
-		if (index < 0 || index > totalNodes)
+		if (index < 0 || index >= totalNodes)
 		{
 			std::cout << "\n\t\tInvalid index!\n\n";
 			system("pause");
