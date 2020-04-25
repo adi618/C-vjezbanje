@@ -126,7 +126,9 @@ public:
 		Node* temp = head;
 
 		head = head->nextNode;
-		head->prevNode = nullptr;
+		if (head != nullptr)
+			head->prevNode = nullptr;
+
 		free(temp);
 		totalNodes--;
 	}
@@ -143,7 +145,7 @@ public:
 
 	void removeNodeAtIndex(int index)		// O(n)
 	{
-		if (invalidIndex(index))
+		if (invalidIndex(index + 1))
 			return;
 
 		if (index == 0)
@@ -198,7 +200,7 @@ public:
 
 	bool invalidIndex(int index)		// O(1)
 	{
-		if (index < 0 || index >= totalNodes)
+		if (index < 0 || index > totalNodes)
 		{
 			std::cout << "\n\t\tInvalid index!\n\n";
 			system("pause");
@@ -225,13 +227,13 @@ void doublyLinkedList()
 	int option;
 	int index;
 	int num;
-	DoublyLinkedList myDoublyLinkedList;
+	DoublyLinkedList myList;
 
 	while (true)
 	{
 		system("cls");
 		std::cout << "\n\n\tDoubly Linked List:      ";
-		myDoublyLinkedList.printNodes();
+		myList.printNodes();
 
 		std::cout << "\n\n\tChoose an option:"
 			<< "\n\t\t1 - Add a number to the end of the list (append / push)"
@@ -249,13 +251,13 @@ void doublyLinkedList()
 		{
 			std::cout << "\n\t\tEnter the number: ";
 			std::cin >> num;
-			myDoublyLinkedList.appendNode(num);
+			myList.appendNode(num);
 		}
 		else if (option == 2)
 		{
 			std::cout << "\n\t\tEnter the number: ";
 			std::cin >> num;
-			myDoublyLinkedList.prependNode(num);
+			myList.prependNode(num);
 		}
 		else if (option == 3)
 		{
@@ -263,27 +265,27 @@ void doublyLinkedList()
 			std::cin >> num;
 			std::cout << "\n\t\tEnter the index: ";
 			std::cin >> index;
-			myDoublyLinkedList.insertNodeAtIndex(num, index);
+			myList.insertNodeAtIndex(num, index);
 		}
 		else if (option == 4)
 		{
-			if (myDoublyLinkedList.listIsEmpty())
+			if (myList.listIsEmpty())
 				continue;
-			myDoublyLinkedList.removeNodeAtIndex(myDoublyLinkedList.getLength() - 1);
+			myList.removeNodeAtIndex(myList.getLength() - 1);
 		}
 		else if (option == 5)
 		{
-			if (myDoublyLinkedList.listIsEmpty())
+			if (myList.listIsEmpty())
 				continue;
-			myDoublyLinkedList.removeFirstNode();
+			myList.removeFirstNode();
 		}
 		else if (option == 6)
 		{
-			if (myDoublyLinkedList.listIsEmpty())
+			if (myList.listIsEmpty())
 				continue;
 			std::cout << "\n\t\tEnter the index: ";
 			std::cin >> index;
-			myDoublyLinkedList.removeNodeAtIndex(index);
+			myList.removeNodeAtIndex(index);
 		}
 		else if (option == 10)
 			break;
