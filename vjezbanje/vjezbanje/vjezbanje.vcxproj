@@ -179,6 +179,7 @@
     <ClCompile Include="Common Character Count.cpp" />
     <ClCompile Include="Contains Common Item.cpp" />
     <ClCompile Include="Counting Valleys.cpp" />
+    <ClCompile Include="Doubly Linked List.cpp" />
     <ClCompile Include="Duplicate Encoder.cpp" />
     <ClCompile Include="Fibonacci.cpp" />
     <ClCompile Include="Find sum of array numbers in sorted array.cpp" />

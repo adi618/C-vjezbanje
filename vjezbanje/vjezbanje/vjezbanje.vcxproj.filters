@@ -421,6 +421,9 @@
     <ClCompile Include="Singly Linked List.cpp">
       <Filter>Source Files\ZTM\Linked Lists</Filter>
     </ClCompile>
+    <ClCompile Include="Doubly Linked List.cpp">
+      <Filter>Source Files\ZTM\Linked Lists</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="pch.h">

@@ -2,9 +2,10 @@
 
 
 void singlyLinkedList();
+void doublyLinkedList();
 
 
 int main()
 {
-	singlyLinkedList();
+	doublyLinkedList();
 }
