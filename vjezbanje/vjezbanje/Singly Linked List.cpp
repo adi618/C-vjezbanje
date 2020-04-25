@@ -116,16 +116,15 @@ public:
 
 	void removeFirstNode()		// O(1)
 	{
-		Node* temp = head;
+		Node* current = head;
 
 		head = head->next;
-		free(temp);
 		totalNodes--;
 	}
 
 	void removeNodeAtIndex(int index)		// O(n)
 	{
-		if (invalidIndex(index))
+		if (invalidIndex(index + 1))
 			return;
 
 		if (index == 0)
@@ -172,7 +171,7 @@ public:
 
 	bool invalidIndex(int index)		// O(1)
 	{
-		if (index < 0 || index >= totalNodes)
+		if (index < 0 || index > totalNodes)
 		{
 			std::cout << "\n\t\tInvalid index!\n\n";
 			system("pause");
