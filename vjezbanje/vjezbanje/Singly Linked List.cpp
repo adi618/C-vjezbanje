@@ -138,7 +138,6 @@ public:
 		traverseNodeToIndex(current, index);
 
 		Node* temp = current->next->next;
-		free(current->next);
 		current->next = temp;
 		totalNodes--;
 
@@ -190,6 +189,28 @@ public:
 		}
 		return false;
 	}
+
+	void reverse()
+	{
+		if (totalNodes == 0 || totalNodes == 1)
+			return;
+
+		Node* first = head;
+		Node* second = head->next;
+		Node* temp;
+
+		tail = head;
+
+		while (second != nullptr)
+		{
+			temp = second->next;
+			second->next = first;
+			first = second;
+			second = temp;
+		}
+		head->next = nullptr;
+		head = first;
+	}
 };
 
 
@@ -213,6 +234,7 @@ void singlyLinkedList()
 			<< "\n\t\t4 - Remove the last number of the list (pop)"
 			<< "\n\t\t5 - Remove the first number of the list"
 			<< "\n\t\t6 - Remove the number at a specific index of the list (remove)"
+			<< "\n\t\t6 - Reverse list"
 			<< "\n\t\t10 - Exit"
 			<< "\n\n\t\tOption: ";
 
@@ -257,6 +279,10 @@ void singlyLinkedList()
 			std::cout << "\n\t\tEnter the index: ";
 			std::cin >> index;
 			myList.removeNodeAtIndex(index);
+		}
+		else if (option == 7)
+		{
+			myList.reverse();
 		}
 		else if (option == 10)
 			break;
