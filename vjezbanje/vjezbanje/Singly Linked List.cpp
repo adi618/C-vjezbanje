@@ -22,6 +22,8 @@ private:
 public:
 	LinkedList() : head(nullptr), tail(nullptr), totalNodes(0) {}
 
+	int getLength() { return totalNodes; }
+
 	void appendNode(int num)		// O(1)
 	{
 		Node* newNode = new Node(num);
@@ -114,10 +116,12 @@ public:
 
 	void popNode()
 	{
-		if (listIsEmpty())
-			return;
+		Node* current = head;
 
-		// not finished
+		head = head->next;
+		free(current);
+		totalNodes--;
+		return;
 	}
 
 	void removeNodeAtIndex(int index)
@@ -125,21 +129,20 @@ public:
 		if (invalidIndex(index))
 			return;
 
-		Node* current = head;
-		totalNodes--;
-		
 		if (index == 0)
 		{
-			head = head->next;
-			free(current);
+			popNode();
 			return;
 		}
+
+		Node* current = head;
 
 		traverseNodeToIndex(current, index);
 
 		Node* temp = current->next->next;
 		free(current->next);
 		current->next = temp;
+		totalNodes--;
 
 		if (index == totalNodes)
 			tail = current;
@@ -239,11 +242,15 @@ void singlyLinkedList()
 		}
 		else if (option == 4)
 		{
-			
+			if (myList.listIsEmpty())
+				continue;
+			myList.removeNodeAtIndex(myList.getLength() - 1);
 		}
 		else if (option == 5)
 		{
-
+			if (myList.listIsEmpty())
+				continue;
+			myList.popNode();
 		}
 		else if (option == 6)
 		{
