@@ -244,13 +244,13 @@ void singlyLinkedList()
 		{
 			if (myList.listIsEmpty())
 				continue;
-			myList.removeNodeAtIndex(myList.getLength() - 1);
+			myList.popNode();
 		}
 		else if (option == 5)
 		{
 			if (myList.listIsEmpty())
 				continue;
-			myList.popNode();
+			myList.removeNodeAtIndex(myList.getLength() - 1);
 		}
 		else if (option == 6)
 		{
