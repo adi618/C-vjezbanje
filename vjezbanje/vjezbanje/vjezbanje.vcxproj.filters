@@ -89,6 +89,9 @@
     <Filter Include="Source Files\LeetCode">
       <UniqueIdentifier>{3832afd5-8c8d-4363-bce9-81b4897cade5}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\ZTM\Linked Lists">
+      <UniqueIdentifier>{a97d8092-a086-433e-9379-4f6bdc1efa6b}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Source.cpp">
@@ -414,6 +417,9 @@
     </ClCompile>
     <ClCompile Include="Move Zeroes.cpp">
       <Filter>Source Files\LeetCode</Filter>
+    </ClCompile>
+    <ClCompile Include="Singly Linked List.cpp">
+      <Filter>Source Files\ZTM\Linked Lists</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

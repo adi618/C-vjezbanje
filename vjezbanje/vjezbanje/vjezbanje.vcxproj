@@ -220,6 +220,7 @@
     <ClCompile Include="Rotate Image - Optimized.cpp" />
     <ClCompile Include="Rotate Image.cpp" />
     <ClCompile Include="Sherlock and the Valid String.cpp" />
+    <ClCompile Include="Singly Linked List.cpp" />
     <ClCompile Include="Sock Merchant.cpp" />
     <ClCompile Include="Sort by Height.cpp" />
     <ClCompile Include="Source.cpp" />
