@@ -234,7 +234,7 @@ void singlyLinkedList()
 			<< "\n\t\t4 - Remove the last number of the list (pop)"
 			<< "\n\t\t5 - Remove the first number of the list"
 			<< "\n\t\t6 - Remove the number at a specific index of the list (remove)"
-			<< "\n\t\t6 - Reverse list"
+			<< "\n\t\t7 - Reverse list"
 			<< "\n\t\t10 - Exit"
 			<< "\n\n\t\tOption: ";
 
