@@ -230,7 +230,7 @@ void doublyLinkedList()
 	while (true)
 	{
 		system("cls");
-		std::cout << "\n\n\tLinked List:      ";
+		std::cout << "\n\n\tDoubly Linked List:      ";
 		myDoublyLinkedList.printNodes();
 
 		std::cout << "\n\n\tChoose an option:"

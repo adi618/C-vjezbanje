@@ -155,7 +155,7 @@ public:
 		{
 			while (current != nullptr)
 			{
-				std::cout << current->number << "--> ";
+				std::cout << current->number << " --> ";
 				current = current->next;
 			}
 			std::cout << "nullptr";
