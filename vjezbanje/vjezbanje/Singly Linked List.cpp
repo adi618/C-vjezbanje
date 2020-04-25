@@ -114,7 +114,7 @@ public:
 		totalNodes++;
 	}
 
-	void popNode()		// O(1)
+	void removeFirstNode()		// O(1)
 	{
 		Node* current = head;
 
@@ -131,7 +131,7 @@ public:
 
 		if (index == 0)
 		{
-			popNode();
+			removeFirstNode();
 			return;
 		}
 
@@ -244,13 +244,13 @@ void singlyLinkedList()
 		{
 			if (myList.listIsEmpty())
 				continue;
-			myList.popNode();
+			myList.removeNodeAtIndex(myList.getLength() - 1);
 		}
 		else if (option == 5)
 		{
 			if (myList.listIsEmpty())
 				continue;
-			myList.removeNodeAtIndex(myList.getLength() - 1);
+			myList.removeFirstNode();
 		}
 		else if (option == 6)
 		{
