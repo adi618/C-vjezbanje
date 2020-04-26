@@ -215,6 +215,7 @@
       <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">pch.h</PrecompiledHeaderFile>
     </ClCompile>
     <ClCompile Include="pi calculator.cpp" />
+    <ClCompile Include="Queue.cpp" />
     <ClCompile Include="Repeated String.cpp" />
     <ClCompile Include="Reverse in Parentheses.cpp" />
     <ClCompile Include="Reverse Vowels of String.cpp" />
@@ -228,6 +229,7 @@
     <ClCompile Include="Source1.cpp" />
     <ClCompile Include="Source2.cpp" />
     <ClCompile Include="sqrt without sqrt.cpp" />
+    <ClCompile Include="Stack.cpp" />
     <ClCompile Include="Stringovi.cpp" />
     <ClCompile Include="Subnetting.cpp" />
     <ClCompile Include="Sum of Numbers.cpp" />

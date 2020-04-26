@@ -1,22 +1,22 @@
 #include "pch.h"
 
 
-class Node
+class SLLNode
 {
 	friend class LinkedList;
 private:
 	int number;
-	Node* next;
+	SLLNode* next;
 
 public:
-	Node(int number) : number(number), next(nullptr) {}
+	SLLNode(int number) : number(number), next(nullptr) {}
 };
 
 class LinkedList
 {
 private:
-	Node* head;
-	Node* tail;
+	SLLNode* head;
+	SLLNode* tail;
 	int totalNodes;
 
 public:
@@ -26,7 +26,7 @@ public:
 
 	void appendNode(int num)		// O(1)
 	{
-		Node* newNode = new Node(num);
+		SLLNode* newNode = new SLLNode(num);
 		totalNodes++;
 
 		if (head == nullptr)
@@ -43,7 +43,7 @@ public:
 
 	void prependNode(int num)		// O(1)
 	{
-		Node* newNode = new Node(num);
+		SLLNode* newNode = new SLLNode(num);
 		totalNodes++;
 
 		if (head == nullptr)
@@ -58,7 +58,7 @@ public:
 		}
 	}
 
-	void traverseNodeToIndex(Node*& current, Node*& previous, int index)		// O(n)
+	void traverseNodeToIndex(SLLNode*& current, SLLNode*& previous, int index)		// O(n)
 	{
 		while (current != nullptr)
 		{
@@ -71,7 +71,7 @@ public:
 		}
 	}
 
-	void traverseNodeToIndex(Node*& current, int index)		// O(n)
+	void traverseNodeToIndex(SLLNode*& current, int index)		// O(n)
 	{
 		while (current != nullptr)
 		{
@@ -102,10 +102,10 @@ public:
 			return;
 		}
 
-		Node* newNode = new Node(num);
+		SLLNode* newNode = new SLLNode(num);
 
-		Node* current = head->next;
-		Node* previous = head;
+		SLLNode* current = head->next;
+		SLLNode* previous = head;
 
 		traverseNodeToIndex(current, previous, index);
 
@@ -116,8 +116,6 @@ public:
 
 	void removeFirstNode()		// O(1)
 	{
-		Node* current = head;
-
 		head = head->next;
 		totalNodes--;
 	}
@@ -133,11 +131,11 @@ public:
 			return;
 		}
 
-		Node* current = head;
+		SLLNode* current = head;
 
 		traverseNodeToIndex(current, index);
 
-		Node* temp = current->next->next;
+		SLLNode* temp = current->next->next;
 		current->next = temp;
 		totalNodes--;
 
@@ -147,7 +145,7 @@ public:
 
 	void printNodes()		// O(n)
 	{
-		Node* current = head;
+		SLLNode* current = head;
 
 		if (head != nullptr)
 		{
@@ -190,14 +188,14 @@ public:
 		return false;
 	}
 
-	void reverse()
+	void reverse()		// O(n)
 	{
 		if (totalNodes == 0 || totalNodes == 1)
 			return;
 
-		Node* first = head;
-		Node* second = head->next;
-		Node* temp;
+		SLLNode* first = head;
+		SLLNode* second = head->next;
+		SLLNode* temp;
 
 		tail = head;
 

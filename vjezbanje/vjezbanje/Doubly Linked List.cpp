@@ -1,23 +1,23 @@
 #include "pch.h"
 
 
-class Node
+class DLLNode
 {
 	friend class DoublyLinkedList;
 private:
 	int number;
-	Node* nextNode;
-	Node* prevNode;
+	DLLNode* nextNode;
+	DLLNode* prevNode;
 
 public:
-	Node(int number) : number(number), nextNode(nullptr), prevNode(nullptr) {}
+	DLLNode(int number) : number(number), nextNode(nullptr), prevNode(nullptr) {}
 };
 
 class DoublyLinkedList
 {
 private:
-	Node* head;
-	Node* tail;
+	DLLNode* head;
+	DLLNode* tail;
 	int totalNodes;
 
 public:
@@ -27,7 +27,7 @@ public:
 
 	void appendNode(int num)		// O(1)
 	{
-		Node* newNode = new Node(num);
+		DLLNode* newNode = new DLLNode(num);
 		totalNodes++;
 
 		if (head == nullptr)
@@ -46,7 +46,7 @@ public:
 
 	void prependNode(int num)		// O(1)
 	{
-		Node* newNode = new Node(num);
+		DLLNode* newNode = new DLLNode(num);
 		totalNodes++;
 
 		if (head == nullptr)
@@ -63,7 +63,7 @@ public:
 		}
 	}
 
-	void traverseNodeToIndex(Node*& current, Node*& previous, int index)		// O(n)
+	void traverseNodeToIndex(DLLNode*& current, DLLNode*& previous, int index)		// O(n)
 	{
 		while (current != nullptr)
 		{
@@ -76,7 +76,7 @@ public:
 		}
 	}
 
-	void traverseNodeToIndex(Node*& current, int index)		// O(n)
+	void traverseNodeToIndex(DLLNode*& current, int index)		// O(n)
 	{
 		while (current != nullptr)
 		{
@@ -107,10 +107,10 @@ public:
 			return;
 		}
 
-		Node* newNode = new Node(num);
+		DLLNode* newNode = new DLLNode(num);
 
-		Node* current = head->nextNode;
-		Node* previous = head;
+		DLLNode* current = head->nextNode;
+		DLLNode* previous = head;
 
 		traverseNodeToIndex(current, previous, index);
 
@@ -123,7 +123,7 @@ public:
 
 	void removeFirstNode()		// O(1)
 	{
-		Node* temp = head;
+		DLLNode* temp = head;
 
 		head = head->nextNode;
 		if (head != nullptr)
@@ -135,7 +135,7 @@ public:
 
 	void popNode()		// O(1)
 	{
-		Node* temp = tail;
+		DLLNode* temp = tail;
 
 		tail = tail->prevNode;
 		tail->nextNode = nullptr;
@@ -160,11 +160,11 @@ public:
 			return;
 		}
 
-		Node* current = head;
+		DLLNode* current = head;
 
 		traverseNodeToIndex(current, index);
 
-		Node* temp = current->nextNode->nextNode;
+		DLLNode* temp = current->nextNode->nextNode;
 		free(current->nextNode);
 		temp->prevNode = current;
 		current->nextNode = temp;
@@ -176,7 +176,7 @@ public:
 
 	void printNodes()		// O(n)
 	{
-		Node* current = head;
+		DLLNode* current = head;
 
 		if (head != nullptr)
 		{

@@ -92,6 +92,9 @@
     <Filter Include="Source Files\ZTM\Linked Lists">
       <UniqueIdentifier>{a97d8092-a086-433e-9379-4f6bdc1efa6b}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\ZTM\Stacks and Queues">
+      <UniqueIdentifier>{64ff5836-87b8-4bfd-997a-c56085543c9d}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Source.cpp">
@@ -423,6 +426,12 @@
     </ClCompile>
     <ClCompile Include="Doubly Linked List.cpp">
       <Filter>Source Files\ZTM\Linked Lists</Filter>
+    </ClCompile>
+    <ClCompile Include="Stack.cpp">
+      <Filter>Source Files\ZTM\Stacks and Queues</Filter>
+    </ClCompile>
+    <ClCompile Include="Queue.cpp">
+      <Filter>Source Files\ZTM\Stacks and Queues</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

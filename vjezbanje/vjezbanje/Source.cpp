@@ -3,9 +3,10 @@
 
 void singlyLinkedList();
 void doublyLinkedList();
+void ZTMstack();
 
 
 int main()
 {
-	singlyLinkedList();
+	ZTMstack();
 }
