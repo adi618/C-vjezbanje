@@ -55,32 +55,34 @@ public:
 
 	int peek()
 	{
+		if (top == nullptr)
+			return 0;
 		return top->num;
 	}
 
 	void printStack()
 	{
-		SNode* temp = top;
-
 		if (totalNodes == 0)
 		{
 			std::cout << "  [empty]";
 		}
 		else
 		{
+			SNode* temp = top;
+
 			std::cout << "  -----\n";
 			while (temp != nullptr)
 			{
 				std::cout << "\t\t| " << temp->num << " |\n";
+				std::cout << "\t\t-----\n";
 				temp = temp->next;
 			}
-			std::cout << "\t\t-----";
 		}
 	}
 };
 
 
-void ZTMstack()
+void DTStack()
 {
 	int option;
 	int num;

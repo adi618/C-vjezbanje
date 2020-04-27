@@ -3,10 +3,12 @@
 
 void singlyLinkedList();
 void doublyLinkedList();
-void ZTMstack();
+void DTStack();
+void DTQueue();
+void DTBinarySearchTree();
 
 
 int main()
 {
-	ZTMstack();
+	DTBinarySearchTree();
 }

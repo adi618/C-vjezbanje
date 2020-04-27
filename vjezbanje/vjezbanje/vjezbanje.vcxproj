@@ -173,6 +173,7 @@
     <ClCompile Include="Benchmark.cpp" />
     <ClCompile Include="Binary Multiple of 3.cpp" />
     <ClCompile Include="BinarySearch.cpp" />
+    <ClCompile Include="BinarySearchTree.cpp" />
     <ClCompile Include="Bolnica.cpp" />
     <ClCompile Include="Bubble Sort.cpp" />
     <ClCompile Include="Common Character Count 2.cpp" />
