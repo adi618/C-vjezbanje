@@ -9,8 +9,9 @@ void DTBinarySearchTree();
 void SelectionSort();
 void InsertionSort();
 void MergeSort();
+void DTSStackv2();
 
 int main()
 {
-	MergeSort();
+	DTSStackv2();
 }

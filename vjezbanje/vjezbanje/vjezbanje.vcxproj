@@ -232,6 +232,7 @@
     <ClCompile Include="Source1.cpp" />
     <ClCompile Include="Source2.cpp" />
     <ClCompile Include="sqrt without sqrt.cpp" />
+    <ClCompile Include="Stack v2.cpp" />
     <ClCompile Include="Stack.cpp" />
     <ClCompile Include="Stringovi.cpp" />
     <ClCompile Include="Subnetting.cpp" />

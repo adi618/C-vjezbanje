@@ -454,6 +454,9 @@
     <ClCompile Include="Merge Sort.cpp">
       <Filter>Source Files\Data structures and algorithms\Algorithms: Sorting</Filter>
     </ClCompile>
+    <ClCompile Include="Stack v2.cpp">
+      <Filter>Source Files\Data structures and algorithms\Stacks and Queues</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="pch.h">
