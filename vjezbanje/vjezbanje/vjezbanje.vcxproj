@@ -172,7 +172,6 @@
     <ClCompile Include="Backwards Read Primes.cpp" />
     <ClCompile Include="Benchmark.cpp" />
     <ClCompile Include="Binary Multiple of 3.cpp" />
-    <ClCompile Include="BinarySearch.cpp" />
     <ClCompile Include="BinarySearchTree.cpp" />
     <ClCompile Include="Bolnica.cpp" />
     <ClCompile Include="Bubble Sort.cpp" />
@@ -188,8 +187,10 @@
     <ClCompile Include="First Duplicate - Optimized.cpp" />
     <ClCompile Include="First Duplicate.cpp" />
     <ClCompile Include="First Not Repeating Character.cpp" />
+    <ClCompile Include="Following Patterns.cpp" />
     <ClCompile Include="Growth of a Population.cpp" />
     <ClCompile Include="Hourglass Problem.cpp" />
+    <ClCompile Include="Insertion Sort.cpp" />
     <ClCompile Include="Jumping on the Clouds.cpp" />
     <ClCompile Include="Longest Word.cpp" />
     <ClCompile Include="Making Anagrams.cpp" />
@@ -198,7 +199,7 @@
     <ClCompile Include="Max Array Sum.cpp" />
     <ClCompile Include="Max suma susjednih elemenata.cpp" />
     <ClCompile Include="Merge Arrays.cpp" />
-    <ClCompile Include="MergeSort.cpp" />
+    <ClCompile Include="Merge Sort.cpp" />
     <ClCompile Include="Minimum Swaps 2.cpp" />
     <ClCompile Include="Move Zeroes.cpp" />
     <ClCompile Include="N rastaviti na sve moguce kombinacije X sabiraka.cpp" />
@@ -222,6 +223,7 @@
     <ClCompile Include="Reverse Vowels of String.cpp" />
     <ClCompile Include="Rotate Image - Optimized.cpp" />
     <ClCompile Include="Rotate Image.cpp" />
+    <ClCompile Include="Selection Sort.cpp" />
     <ClCompile Include="Sherlock and the Valid String.cpp" />
     <ClCompile Include="Singly Linked List.cpp" />
     <ClCompile Include="Sock Merchant.cpp" />

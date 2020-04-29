@@ -86,20 +86,26 @@
     <Filter Include="Source Files\LeetCode">
       <UniqueIdentifier>{3832afd5-8c8d-4363-bce9-81b4897cade5}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files\Data structures">
-      <UniqueIdentifier>{c76de681-c869-4050-b1a3-903f296d1484}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\Data structures\Linked Lists">
-      <UniqueIdentifier>{a97d8092-a086-433e-9379-4f6bdc1efa6b}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\Data structures\Stacks and Queues">
-      <UniqueIdentifier>{64ff5836-87b8-4bfd-997a-c56085543c9d}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\Data structures\Trees">
-      <UniqueIdentifier>{e8f4e4bf-417a-495c-8d08-d80f6a18a98b}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Source Files\ZTM">
       <UniqueIdentifier>{8700d3c0-81a1-46e7-818f-bbdd1dc7dd21}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Codesignal\Practice\Hash tables">
+      <UniqueIdentifier>{1bbbd901-a7b4-4eea-924a-a8c6ce61a7dc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Data structures and algorithms">
+      <UniqueIdentifier>{c76de681-c869-4050-b1a3-903f296d1484}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Data structures and algorithms\Linked Lists">
+      <UniqueIdentifier>{a97d8092-a086-433e-9379-4f6bdc1efa6b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Data structures and algorithms\Stacks and Queues">
+      <UniqueIdentifier>{64ff5836-87b8-4bfd-997a-c56085543c9d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Data structures and algorithms\Trees">
+      <UniqueIdentifier>{e8f4e4bf-417a-495c-8d08-d80f6a18a98b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Data structures and algorithms\Algorithms: Sorting">
+      <UniqueIdentifier>{f9dbfc58-684e-4722-9311-381c61e5875f}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -166,13 +172,7 @@
     <ClCompile Include="Adi_Zubic_Zadaca_1.cpp">
       <Filter>Source Files\Fax\Zadace</Filter>
     </ClCompile>
-    <ClCompile Include="MergeSort.cpp">
-      <Filter>Source Files\Fax\Predavanja/vjezbe/whatever</Filter>
-    </ClCompile>
     <ClCompile Include="Bolnica.cpp">
-      <Filter>Source Files\Fax\Predavanja/vjezbe/whatever</Filter>
-    </ClCompile>
-    <ClCompile Include="BinarySearch.cpp">
       <Filter>Source Files\Fax\Predavanja/vjezbe/whatever</Filter>
     </ClCompile>
     <ClCompile Include="Arrays Left Rotation.cpp">
@@ -195,9 +195,6 @@
     </ClCompile>
     <ClCompile Include="New Year Chaos.cpp">
       <Filter>Source Files\Hackerrank\THR Arrays 3/5</Filter>
-    </ClCompile>
-    <ClCompile Include="Bubble Sort.cpp">
-      <Filter>Source Files\Hackerrank\THR Sorting 1/5</Filter>
     </ClCompile>
     <ClCompile Include="N rastaviti na sve moguce kombinacije X sabiraka.cpp">
       <Filter>Source Files\Random</Filter>
@@ -419,16 +416,16 @@
       <Filter>Source Files\LeetCode</Filter>
     </ClCompile>
     <ClCompile Include="Singly Linked List.cpp">
-      <Filter>Source Files\Data structures\Linked Lists</Filter>
+      <Filter>Source Files\Data structures and algorithms\Linked Lists</Filter>
     </ClCompile>
     <ClCompile Include="Doubly Linked List.cpp">
-      <Filter>Source Files\Data structures\Linked Lists</Filter>
+      <Filter>Source Files\Data structures and algorithms\Linked Lists</Filter>
     </ClCompile>
     <ClCompile Include="Stack.cpp">
-      <Filter>Source Files\Data structures\Stacks and Queues</Filter>
+      <Filter>Source Files\Data structures and algorithms\Stacks and Queues</Filter>
     </ClCompile>
     <ClCompile Include="Queue.cpp">
-      <Filter>Source Files\Data structures\Stacks and Queues</Filter>
+      <Filter>Source Files\Data structures and algorithms\Stacks and Queues</Filter>
     </ClCompile>
     <ClCompile Include="Merge Arrays.cpp">
       <Filter>Source Files\ZTM</Filter>
@@ -440,7 +437,22 @@
       <Filter>Source Files\ZTM</Filter>
     </ClCompile>
     <ClCompile Include="BinarySearchTree.cpp">
-      <Filter>Source Files\Data structures\Trees</Filter>
+      <Filter>Source Files\Data structures and algorithms\Trees</Filter>
+    </ClCompile>
+    <ClCompile Include="Following Patterns.cpp">
+      <Filter>Source Files\Codesignal\Practice\Hash tables</Filter>
+    </ClCompile>
+    <ClCompile Include="Bubble Sort.cpp">
+      <Filter>Source Files\Data structures and algorithms\Algorithms: Sorting</Filter>
+    </ClCompile>
+    <ClCompile Include="Selection Sort.cpp">
+      <Filter>Source Files\Data structures and algorithms\Algorithms: Sorting</Filter>
+    </ClCompile>
+    <ClCompile Include="Insertion Sort.cpp">
+      <Filter>Source Files\Data structures and algorithms\Algorithms: Sorting</Filter>
+    </ClCompile>
+    <ClCompile Include="Merge Sort.cpp">
+      <Filter>Source Files\Data structures and algorithms\Algorithms: Sorting</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

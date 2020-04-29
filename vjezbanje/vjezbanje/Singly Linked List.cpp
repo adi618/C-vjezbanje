@@ -170,7 +170,7 @@ public:
 	{
 		if (index < 0 || index > totalNodes)
 		{
-			std::cout << "\n\t\tInvalid index!\n\n";
+			std::cout << "\n\t\tInvalid index!\n\n\t\t";
 			system("pause");
 			return true;
 		}
@@ -181,7 +181,7 @@ public:
 	{
 		if (totalNodes == 0)
 		{
-			std::cout << "\n\t\tNothing to remove!\n\n";
+			std::cout << "\n\t\tNothing to remove!\n\n\t\t";
 			system("pause");
 			return true;
 		}
@@ -286,7 +286,7 @@ void singlyLinkedList()
 			break;
 		else
 		{
-			std::cout << "\n\t\tInvalid option!\n\n";
+			std::cout << "\n\t\tInvalid option!\n\n\t\t";
 			system("pause");
 		}
 	}
