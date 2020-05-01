@@ -21,6 +21,8 @@ private:
 public:
 	BinarySearchTree() :root(nullptr) {}
 
+	BSTNode* getRoot() { return root; }
+
 	void insert(int num)
 	{
 		BSTNode* newNode = new BSTNode(num);
@@ -138,6 +140,50 @@ public:
 		}
 		return false;
 	}
+
+	std::vector <int> BreadthFirstSearch()
+	{
+		BSTNode* current = root;
+
+		std::vector <int> result;
+		std::queue <BSTNode*> queue;
+
+		queue.push(current);
+
+		while (queue.size() > 0)
+		{
+			current = queue.front();
+			queue.pop();
+
+			result.push_back(current->num);
+
+			if (current->left)
+				queue.push(current->left);
+
+			if (current->right)
+				queue.push(current->right);
+		}
+
+		return result;
+	}
+
+	std::vector <int> BreadthFirstSearchRecursive(std::queue <BSTNode*> queue, std::vector <int> result = {})
+	{
+		if (queue.empty())
+			return result;
+
+		BSTNode* current = queue.front();
+		queue.pop();
+		result.push_back(current->num);
+
+		if (current->left)
+			queue.push(current->left);
+
+		if (current->right)
+			queue.push(current->right);
+
+		return BreadthFirstSearchRecursive(queue, result);
+	}
 };
 
 
@@ -154,6 +200,19 @@ void DTBinarySearchTree()
 	myTree.insert(234);
 	myTree.remove(234);
 	myTree.remove(63);
+
+	std::vector <int> iterative = myTree.BreadthFirstSearch();
+	std::queue <BSTNode*> temp;
+	temp.push(myTree.getRoot());
+	std::vector <int> recursive = myTree.BreadthFirstSearchRecursive(temp);
+
+	for (int num : iterative)
+		std::cout << num << "  ";
+
+	std::cout << std::endl;
+
+	for (int num : recursive)
+		std::cout << num << "  ";
 
 	return;
 }

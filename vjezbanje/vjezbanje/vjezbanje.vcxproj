@@ -172,8 +172,10 @@
     <ClCompile Include="Backwards Read Primes.cpp" />
     <ClCompile Include="Benchmark.cpp" />
     <ClCompile Include="Binary Multiple of 3.cpp" />
+    <ClCompile Include="Binary Search.cpp" />
     <ClCompile Include="BinarySearchTree.cpp" />
     <ClCompile Include="Bolnica.cpp" />
+    <ClCompile Include="Breadth First Search.cpp" />
     <ClCompile Include="Bubble Sort.cpp" />
     <ClCompile Include="Common Character Count 2.cpp" />
     <ClCompile Include="Common Character Count.cpp" />
@@ -189,6 +191,7 @@
     <ClCompile Include="First Not Repeating Character.cpp" />
     <ClCompile Include="Following Patterns.cpp" />
     <ClCompile Include="Growth of a Population.cpp" />
+    <ClCompile Include="Heap Sort.cpp" />
     <ClCompile Include="Hourglass Problem.cpp" />
     <ClCompile Include="Insertion Sort.cpp" />
     <ClCompile Include="Jumping on the Clouds.cpp" />
@@ -218,6 +221,7 @@
     </ClCompile>
     <ClCompile Include="pi calculator.cpp" />
     <ClCompile Include="Queue.cpp" />
+    <ClCompile Include="Quick Sort.cpp" />
     <ClCompile Include="Repeated String.cpp" />
     <ClCompile Include="Reverse in Parentheses.cpp" />
     <ClCompile Include="Reverse Vowels of String.cpp" />

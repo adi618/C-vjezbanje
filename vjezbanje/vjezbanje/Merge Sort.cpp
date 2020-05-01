@@ -52,7 +52,7 @@ void Merge(std::vector <int> array, int left, int mid, int right)
 }
 
 
-void MergeSort(std::vector <int> array, int right, int left = 0)
+void MergeSort(std::vector <int> array, int left, int right)
 {
 	if (left < right)
 	{
@@ -66,9 +66,15 @@ void MergeSort(std::vector <int> array, int right, int left = 0)
 }
 
 
+void MergeSort(std::vector <int> array)
+{
+    MergeSort(array, 0, array.size());
+}
+
+
 void MergeSort()
 {
 	std::vector <int> array = { 1,5,7,4,3,7,8,4,5,7,3 };
-	MergeSort(array, array.size());
+	MergeSort(array);
 	return;
 }

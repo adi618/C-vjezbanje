@@ -107,6 +107,9 @@
     <Filter Include="Source Files\Data structures and algorithms\Algorithms: Sorting">
       <UniqueIdentifier>{f9dbfc58-684e-4722-9311-381c61e5875f}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\Data structures and algorithms\Algorithms: Searching">
+      <UniqueIdentifier>{eaae819c-b430-406f-9688-aa449e5421ea}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Source.cpp">
@@ -456,6 +459,18 @@
     </ClCompile>
     <ClCompile Include="Stack v2.cpp">
       <Filter>Source Files\Data structures and algorithms\Stacks and Queues</Filter>
+    </ClCompile>
+    <ClCompile Include="Quick Sort.cpp">
+      <Filter>Source Files\Data structures and algorithms\Algorithms: Sorting</Filter>
+    </ClCompile>
+    <ClCompile Include="Heap Sort.cpp">
+      <Filter>Source Files\Data structures and algorithms\Algorithms: Sorting</Filter>
+    </ClCompile>
+    <ClCompile Include="Binary Search.cpp">
+      <Filter>Source Files\Data structures and algorithms\Algorithms: Searching</Filter>
+    </ClCompile>
+    <ClCompile Include="Breadth First Search.cpp">
+      <Filter>Source Files\Data structures and algorithms\Algorithms: Searching</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
