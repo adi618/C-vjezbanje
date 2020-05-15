@@ -104,11 +104,13 @@ void BreadthFirstSearch()
 {
 	BreadthFirstSearchClass myTree;
 
+	myTree.insertNode(33);
+	myTree.insertNode(21);
+	myTree.insertNode(324);
+	myTree.insertNode(123);
+	myTree.insertNode(1233);
 	myTree.insertNode(1);
-	myTree.insertNode(2);
-	myTree.insertNode(3);
-	myTree.insertNode(4);
-	myTree.insertNode(5);
+	myTree.insertNode(55);
 
 	std::vector <int> iterative = myTree.BreadthFirstSearch();
 	std::queue <BFSNode*> temp;

@@ -79,6 +79,7 @@
       <ConformanceMode>true</ConformanceMode>
       <PrecompiledHeader>Use</PrecompiledHeader>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -92,6 +93,7 @@
       <ConformanceMode>true</ConformanceMode>
       <PrecompiledHeader>Use</PrecompiledHeader>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -107,6 +109,7 @@
       <ConformanceMode>true</ConformanceMode>
       <PrecompiledHeader>Use</PrecompiledHeader>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -124,6 +127,7 @@
       <ConformanceMode>true</ConformanceMode>
       <PrecompiledHeader>Use</PrecompiledHeader>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -147,6 +151,21 @@
     <ClCompile Include="Adi_Zubic_Zadaca_5_Z2.cpp" />
     <ClCompile Include="Adi_Zubic_Zadaca_5_Z3.cpp" />
     <ClCompile Include="Adi_Zubic_Zadaca_5_Z4.cpp" />
+    <ClCompile Include="Adi_Zubic_Zadaca_6_Z1.cpp" />
+    <ClCompile Include="Adi_Zubic_Zadaca_6_Z10.cpp" />
+    <ClCompile Include="Adi_Zubic_Zadaca_6_Z11.cpp" />
+    <ClCompile Include="Adi_Zubic_Zadaca_6_Z12.cpp" />
+    <ClCompile Include="Adi_Zubic_Zadaca_6_Z13.cpp" />
+    <ClCompile Include="Adi_Zubic_Zadaca_6_Z14.cpp" />
+    <ClCompile Include="Adi_Zubic_Zadaca_6_Z15.cpp" />
+    <ClCompile Include="Adi_Zubic_Zadaca_6_Z2.cpp" />
+    <ClCompile Include="Adi_Zubic_Zadaca_6_Z3.cpp" />
+    <ClCompile Include="Adi_Zubic_Zadaca_6_Z4.cpp" />
+    <ClCompile Include="Adi_Zubic_Zadaca_6_Z5.cpp" />
+    <ClCompile Include="Adi_Zubic_Zadaca_6_Z6.cpp" />
+    <ClCompile Include="Adi_Zubic_Zadaca_6_Z7.cpp" />
+    <ClCompile Include="Adi_Zubic_Zadaca_6_Z8.cpp" />
+    <ClCompile Include="Adi_Zubic_Zadaca_6_Z9.cpp" />
     <ClCompile Include="Adi_Zubic_Zadaca_Z12_ZaDobrovoljce.cpp" />
     <ClCompile Include="Adi_Zubic_Zadaca_Z13_ZaDobrovoljce.cpp" />
     <ClCompile Include="Adi_Zubic_Zadaca_Z14_ZaDobrovoljce.cpp" />
@@ -163,6 +182,7 @@
     <ClCompile Include="Alternating Characters.cpp" />
     <ClCompile Include="Alternating Sums.cpp" />
     <ClCompile Include="Amend the Sentence.cpp" />
+    <ClCompile Include="Are Mixed Arrays Similar.cpp" />
     <ClCompile Include="Are Similar.cpp" />
     <ClCompile Include="Array Change.cpp" />
     <ClCompile Include="Array comparison.cpp" />
@@ -181,6 +201,7 @@
     <ClCompile Include="Common Character Count.cpp" />
     <ClCompile Include="Contains Common Item.cpp" />
     <ClCompile Include="Counting Valleys.cpp" />
+    <ClCompile Include="Depth First Search.cpp" />
     <ClCompile Include="Doubly Linked List.cpp" />
     <ClCompile Include="Duplicate Encoder.cpp" />
     <ClCompile Include="Fibonacci.cpp" />

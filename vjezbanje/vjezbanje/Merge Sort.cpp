@@ -74,7 +74,7 @@ void MergeSort(std::vector <int> array)
 
 void MergeSort()
 {
-	std::vector <int> array = { 1,5,7,4,3,7,8,4,5,7,3 };
+	std::vector <int> array = { 1,5,7,4 };
 	MergeSort(array);
 	return;
 }

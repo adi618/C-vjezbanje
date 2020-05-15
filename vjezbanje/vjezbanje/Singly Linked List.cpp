@@ -209,6 +209,24 @@ public:
 		head->next = nullptr;
 		head = first;
 	}
+
+
+	SLLNode* removeKElements(int val)
+	{
+		while (head != nullptr and head->number == val)
+			head = head->next;
+
+		SLLNode* current = head;
+
+		while (current != nullptr and current->next != nullptr)
+		{
+			if (current->number == val)
+				current->next = current->next->next;
+			else
+				current = current->next;
+		}
+		return head;
+	}
 };
 
 
@@ -281,6 +299,12 @@ void singlyLinkedList()
 		else if (option == 7)
 		{
 			myList.reverse();
+		}
+		else if (option == 8)
+		{
+			std::cout << "\n\t\tEnter the number: ";
+			std::cin >> num;
+			myList.removeKElements(num);
 		}
 		else if (option == 10)
 			break;

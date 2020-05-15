@@ -472,6 +472,57 @@
     <ClCompile Include="Breadth First Search.cpp">
       <Filter>Source Files\Data structures and algorithms\Algorithms: Searching</Filter>
     </ClCompile>
+    <ClCompile Include="Depth First Search.cpp">
+      <Filter>Source Files\Data structures and algorithms\Algorithms: Searching</Filter>
+    </ClCompile>
+    <ClCompile Include="Adi_Zubic_Zadaca_6_Z1.cpp">
+      <Filter>Source Files\Fax\Zadace</Filter>
+    </ClCompile>
+    <ClCompile Include="Adi_Zubic_Zadaca_6_Z2.cpp">
+      <Filter>Source Files\Fax\Zadace</Filter>
+    </ClCompile>
+    <ClCompile Include="Adi_Zubic_Zadaca_6_Z3.cpp">
+      <Filter>Source Files\Fax\Zadace</Filter>
+    </ClCompile>
+    <ClCompile Include="Adi_Zubic_Zadaca_6_Z13.cpp">
+      <Filter>Source Files\Fax\Zadace</Filter>
+    </ClCompile>
+    <ClCompile Include="Are Mixed Arrays Similar.cpp">
+      <Filter>Source Files\Codesignal\Challenges</Filter>
+    </ClCompile>
+    <ClCompile Include="Adi_Zubic_Zadaca_6_Z14.cpp">
+      <Filter>Source Files\Fax\Zadace</Filter>
+    </ClCompile>
+    <ClCompile Include="Adi_Zubic_Zadaca_6_Z4.cpp">
+      <Filter>Source Files\Fax\Zadace</Filter>
+    </ClCompile>
+    <ClCompile Include="Adi_Zubic_Zadaca_6_Z15.cpp">
+      <Filter>Source Files\Fax\Zadace</Filter>
+    </ClCompile>
+    <ClCompile Include="Adi_Zubic_Zadaca_6_Z5.cpp">
+      <Filter>Source Files\Fax\Zadace</Filter>
+    </ClCompile>
+    <ClCompile Include="Adi_Zubic_Zadaca_6_Z6.cpp">
+      <Filter>Source Files\Fax\Zadace</Filter>
+    </ClCompile>
+    <ClCompile Include="Adi_Zubic_Zadaca_6_Z7.cpp">
+      <Filter>Source Files\Fax\Zadace</Filter>
+    </ClCompile>
+    <ClCompile Include="Adi_Zubic_Zadaca_6_Z8.cpp">
+      <Filter>Source Files\Fax\Zadace</Filter>
+    </ClCompile>
+    <ClCompile Include="Adi_Zubic_Zadaca_6_Z9.cpp">
+      <Filter>Source Files\Fax\Zadace</Filter>
+    </ClCompile>
+    <ClCompile Include="Adi_Zubic_Zadaca_6_Z10.cpp">
+      <Filter>Source Files\Fax\Zadace</Filter>
+    </ClCompile>
+    <ClCompile Include="Adi_Zubic_Zadaca_6_Z11.cpp">
+      <Filter>Source Files\Fax\Zadace</Filter>
+    </ClCompile>
+    <ClCompile Include="Adi_Zubic_Zadaca_6_Z12.cpp">
+      <Filter>Source Files\Fax\Zadace</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="pch.h">
