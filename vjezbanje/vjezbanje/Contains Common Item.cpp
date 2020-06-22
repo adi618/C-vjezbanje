@@ -19,7 +19,7 @@ bool quadraticTimeSolution(const std::vector<int>& arr1, const std::vector<int>&
 
 bool linearTimeSolution(const std::vector<int>& arr1, const std::vector<int>& arr2)
 {
-	std::map <int, bool> dict;
+	std::unordered_map <int, bool> dict;
 
 	for (int num : arr1)
 	{
@@ -27,8 +27,10 @@ bool linearTimeSolution(const std::vector<int>& arr1, const std::vector<int>& ar
 	}
 
 	for (int num : arr2)
+	{
 		if (dict[num])
 			return true;
+	}
 	return false;
 }
 
@@ -37,7 +39,6 @@ void ContainsCommonItem()
 {
 	std::vector<int> arr1 = { 1,2,3,4,5,5,6 };
 	std::vector<int> arr2 = { -1,-2,-3,-4,-5 };
-	std::cin.get();
 	{
 		Timer timer;
 		std::cout << quadraticTimeSolution(arr1, arr2);

@@ -523,6 +523,12 @@
     <ClCompile Include="Adi_Zubic_Zadaca_6_Z12.cpp">
       <Filter>Source Files\Fax\Zadace</Filter>
     </ClCompile>
+    <ClCompile Include="Adi_Zubic_Zadaca_7_Z1.cpp">
+      <Filter>Source Files\Fax\Zadace</Filter>
+    </ClCompile>
+    <ClCompile Include="Adi_Zubic_Zadaca_7_Z2.cpp">
+      <Filter>Source Files\Fax\Zadace</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="pch.h">

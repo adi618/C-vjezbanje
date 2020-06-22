@@ -5,13 +5,14 @@ void InsertionSort(std::vector <int>& array)		// Time: O(n^2); Space: O(1)
 {
     for (int i = 1; i < array.size(); i++) {
         int j = i - 1;
+        int x = array[i];
 
-        while (j >= 0 && array[j] > array[i]) {
+        while (j >= 0 && array[j] > x) {
             array[j + 1] = array[j];
-            j = j - 1;
+            j--;
         }
 
-        array[j + 1] = array[i];
+        array[j + 1] = x;
     }
 }
 
