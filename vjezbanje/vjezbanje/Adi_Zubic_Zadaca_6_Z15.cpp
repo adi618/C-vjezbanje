@@ -194,12 +194,12 @@ public:
 	}
 };
 
-		// pisano na engleskom posto prijevodi za termine kao sto su disjoint set nisu bas prakticni (a i generalno ljepse izgleda)
-void Adi_Zubic_Zadaca_6_Z15()				// primjeri ovog zadatka sigurno imaju greske, kaze: "U svakom od narednih M redova zapisana su tri cjela broja"
-{											// u primjeru 1, dati M je jednak 4, dok je ispod napisano 5 grana, drugi primjer je u redu, M je 8 i 8 grana je napisano
-	std::ifstream file("stabla.in.txt");	// takodjer pretpostavljam da su rezultati pogresni, posto, ako se zadatak radi preko Kruskalovog algoritma i disjoint
-											// setova, mora da se trazi minimum spanning tree, a minimum spanning tree ova dva primjera je 12 i 9, prvi mora biti
-	if (file.is_open())						// 12 zato sto su sve grane izmedju cvorova jednake 6, da bi povezali sve cvorove potrebne su nam dvije grane, tako da 12
+
+void Adi_Zubic_Zadaca_6_Z15()
+{
+	std::ifstream file("stabla.in.txt");
+
+	if (file.is_open())
 	{
 		Graph* graph = new Graph;		// dinamicki alocirano u slucaju da je graf prevelik za steka
 
