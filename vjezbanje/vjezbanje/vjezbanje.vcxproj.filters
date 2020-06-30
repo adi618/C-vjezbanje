@@ -529,6 +529,9 @@
     <ClCompile Include="Adi_Zubic_Zadaca_7_Z2.cpp">
       <Filter>Source Files\Fax\Zadace</Filter>
     </ClCompile>
+    <ClCompile Include="CountClouds.cpp">
+      <Filter>Source Files\Codesignal\Challenges</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="pch.h">

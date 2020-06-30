@@ -202,6 +202,7 @@
     <ClCompile Include="Common Character Count 2.cpp" />
     <ClCompile Include="Common Character Count.cpp" />
     <ClCompile Include="Contains Common Item.cpp" />
+    <ClCompile Include="CountClouds.cpp" />
     <ClCompile Include="Counting Valleys.cpp" />
     <ClCompile Include="Depth First Search.cpp" />
     <ClCompile Include="Doubly Linked List.cpp" />
