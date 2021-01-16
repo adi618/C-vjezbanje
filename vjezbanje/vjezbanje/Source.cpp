@@ -142,12 +142,60 @@ std::vector<int> chessBishopDream(std::vector<int> boardSize, std::vector<int> i
 
 
 
+int stringsConstruction(std::string a, std::string b)
+{
+	int res = 333333;
+	std::map <char, int> string1;
+	std::map <char, int> string2;
+
+	for (auto letter : a)
+	{
+		string1[letter]++;
+	}
+
+	for (auto letter : b)
+	{
+		string2[letter]++;
+	}
+
+	for (char letter : a)
+	{
+		if (string2[letter] / string1[letter] < res)
+			res = string2[letter] / string1[letter];
+	}
+
+	return res;
+}
+
+
+
+bool subsetSum(std::vector<int> arr)
+{
+	int sum = 0;
+
+	for (int n : arr)
+	{
+		sum += n;
+	}
+
+	for (int i = 2; i < arr.size(); i++)
+	{
+		for (int n : arr)
+		{
+			if (sum / i == n)
+				return true;
+		}
+	}
+
+	return false;
+}
+
+
+
+
 int main()
 {
-	std::vector<int> a = { 3, 7 };
-	std::vector<int> s = { 1, 2 };
-	std::vector<int> d = { -1, 1 };
-	int k = 13;
+	std::vector <int> a = { 258, 924, 637, 62, 624, 600, 36, 452, 899, 379, 550, 468, 71, 973, 131, 881, 930, 933, 894, 660, 163, 199, 981, 899, 996, 959, 773, 813, 668, 190, 95, 926, 466, 84, 340, 90, 684, 376, 542, 936, 107, 445, 756, 179, 418, 887, 412, 348, 172, 659, 9, 336, 210, 342, 587, 206, 301, 713, 372, 321, 255, 819, 599, 721, 904, 939, 811, 940, 667, 705, 228, 127, 150, 984, 658, 920, 224, 422, 269, 396, 81, 630, 84 };
 
-	chessBishopDream(a, s, d, k);
+	subsetSum(a);
 }
